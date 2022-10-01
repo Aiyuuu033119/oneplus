@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="bgHome">
     <Sidebar />
     <Navbar />
-    <div class="bg-hive">
+    <div>
       <Nuxt />
     </div>
     <Footer />
