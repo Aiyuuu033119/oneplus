@@ -1,102 +1,89 @@
 <template>
-  <div class="bg-white shadow sticky-top">
-    <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
-        <div class="d-flex align-items-center">
-          <nuxt-link to="/" class="py-3 pr-3"
-            ><img :src="logo" height="25"
-          /></nuxt-link>
-          <div
-            class="
-              align-items-center
-              input-group
-              btn-search
-              bg-white
-              border
-              rounded-pill
-              d-none d-lg-flex
-            "
-          >
-            <input
-              id="searchInput"
-              type="search"
-              v-model="searchval"
-              class="form-control bg-transparent border-0"
-              placeholder="Cari Games"
-              ref="control"
-              @keyup.enter="find"
-            />
-            <button class="btn bg-transparent text-danger" type="button">
-              <Icon icon="bx:bx-search" height="24px" />
-            </button>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <div class="w-100 d-flex align-items-center">
+          <div class="col-8 col-lg-2 text-left">
+            <nuxt-link to="/"
+              ><img :src="logo" width="150" alt="NusaPin - Voucher Game Online"
+            /></nuxt-link>
           </div>
-        </div>
-        <div>
-          <div class="d-inline-block d-lg-none">
-            <button
-              class="bg-transparent border-0 text-danger"
-              type="button"
+          <div class="col-2 col-lg-6 d-none d-lg-block">
+            <form action="https://vogame.co.id/shop" method="GET">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="search-query form-control"
+                  name="cari"
+                  value=""
+                  placeholder="Cari Games"
+                />
+                <span class="input-group-append">
+                  <button class="btn btn-light" type="button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="col-2 col-lg-4 d-block d-lg-none">
+            <a
+              class="btn btn-primary text-white"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseExample"
+              href="#panel-login"
+              role="button"
               aria-expanded="false"
-              aria-controls="collapseExample"
+              aria-controls="panel-login"
             >
-              <Icon icon="bx:bx-search" height="24px" />
-            </button>
+              <i class="fas fa-search fa-lg"></i>
+            </a>
           </div>
-          <b-button pill variant="primary" class="mr-2 d-none d-md-inline-block"
-            >Masuk / Daftar</b-button
-          >
-          <a v-b-toggle.sidebar-backdrop class="text-danger" role="button"
-            ><Icon icon="eva:menu-fill" height="24px"
-          /></a>
+          <div class="col-2 col-lg-4 text-right">
+            <nuxt-link to="/" class="btn btn-warning registerBtn">
+              Masuk / Daftar</nuxt-link
+            >
+            <div
+              @click="$emit('toggle-sidebar')"
+              id="sidebarCollapse"
+              class="text-white btn bg-transparent"
+              role="button"
+            >
+              <i class="fas fa-bars fa-lg text-white"></i>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="collapse pb-3" id="collapseExample">
-        <input
-          type="search"
-          v-model="searchval"
-          class="form-control bg-transparent border rounded-pill"
-          placeholder="Cari Games"
-          ref="control"
-          @keyup.enter="find"
-        />
+    </nav>
+    <div class="searchForm">
+      <div class="container">
+        <div
+          id="panel-login"
+          class="panel-collapse collapse"
+          aria-expanded="false"
+          style=""
+        >
+          <div class="panel-body">
+            <form action="https://vogame.co.id/shop" method="GET">
+              <div class="input-group col-md-12">
+                <input
+                  type="text"
+                  name="cari"
+                  class="search-query form-control"
+                  placeholder="Cari Games"
+                />
+                <span class="input-group-append">
+                  <button type="submit" class="btn btn-link">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+          <!-- end panel-body -->
+        </div>
       </div>
-
-      <b-sidebar id="sidebar-backdrop" right backdrop>
-        <div class="px-3 py-2 mb-2">
-          <b-button block pill variant="primary">Masuk / Daftar</b-button>
-        </div>
-        <div class="border-bottom"></div>
-        <div class="px-3 py-2 my-2">
-          <nuxt-link to="" class="text-dark">
-            <div class="side-nav">
-              <div class="d-flex align-items-center flex-row gap-3">
-                <Icon
-                  icon="ant-design:home-filled"
-                  height="20px"
-                  class="my-3"
-                />
-                <div>Home</div>
-              </div>
-            </div>
-          </nuxt-link>
-          <nuxt-link to="" class="text-dark">
-            <div class="side-nav">
-              <div class="d-flex align-items-center flex-row gap-3">
-                <Icon
-                  icon="clarity:shopping-cart-solid"
-                  height="20px"
-                  class="my-3"
-                />
-                <div>Pembelian</div>
-              </div>
-            </div>
-          </nuxt-link>
-        </div>
-      </b-sidebar>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -112,7 +99,7 @@ export default {
     return {
       searchval: "",
       title: "Isigame",
-      logo: "img/logo.svg",
+      logo: "img/logo.png",
       alamat: "",
       notelp: "",
       whatsapp: "",
@@ -123,7 +110,7 @@ export default {
     var vuedis = this;
     this.$axios.get("/mobileapi/s7xs6oast").then((result) => {
       vuedis.title = result.data.nama;
-      vuedis.logo = result.data.logo != "" ? result.data.logo : "img/logo.svg";
+      vuedis.logo = result.data.logo != "" ? result.data.logo : "img/logo.png";
       vuedis.notelp = result.data.telp;
       vuedis.alamat = result.data.alamat;
       vuedis.whatsapp = result.data.wa;

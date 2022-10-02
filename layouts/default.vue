@@ -1,12 +1,15 @@
 <template>
+<div class="wrapper">
+  <Sidebar :isOpenSidebar="isOpenSidebar" @toggle-sidebar="toggleSideBar"/>
   <div class="bgHome">
-    <Sidebar />
-    <Navbar />
+    <Navbar @toggle-sidebar="toggleSideBar"/>
     <div>
       <Nuxt />
     </div>
     <Footer />
   </div>
+  <div @click="toggleSideBar" class="overlay" :class="isOpenSidebar ? 'active' : ''"></div>
+</div>
 </template>
 
 <script>
@@ -25,9 +28,15 @@ export default {
 
   data () {
     return {
-
+      isOpenSidebar: false
     }
-  }
+  },
+
+  methods: {
+    toggleSideBar() {
+      this.isOpenSidebar = !this.isOpenSidebar;
+    },
+  },
 }
 </script>
 
