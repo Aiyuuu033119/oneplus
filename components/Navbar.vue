@@ -6,7 +6,12 @@
           <div class="col-8 col-lg-2 text-left">
             <nuxt-link to="/"
               >
-              <h4 class="text-white text-uppercase font-weight-bold m-0">{{ appName }}</h4>
+              <img
+              :src="require('../assets/img/'+ appName + '/logo.png')"
+              title="vogame"
+              width="120"
+              />
+              <!-- <h4 class="text-white text-uppercase font-weight-bold m-0">{{ appName }}</h4> -->
               <!-- <img :src="logo" width="150" alt="NusaPin - Voucher Game Online"
             /> -->
             </nuxt-link>
@@ -22,7 +27,7 @@
                   placeholder="Cari Games"
                 />
                 <span class="input-group-append">
-                  <button class="btn btn-light" type="button">
+                  <button class="btn btn-light search-icon" type="button">
                     <i class="fas fa-search"></i>
                   </button>
                 </span>
@@ -42,7 +47,7 @@
             </a>
           </div>
           <div class="col-2 col-lg-4 text-right">
-            <nuxt-link to="/login" class="btn btn-warning registerBtn">
+            <nuxt-link to="/login" class="btn btn-secondary registerBtn">
               Masuk / Daftar</nuxt-link
             >
             <div
