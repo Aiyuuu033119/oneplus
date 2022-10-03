@@ -7,32 +7,32 @@
           <li class="nav-item">
             <a
               @click="setActive(1)"
-              class="btn btn-light"
-              :class="active == 1 && 'active'"
+              class="btn"
+              :class="active == 1 ? 'btn-light' : '' "
               >Semua Produk</a
             >
           </li>
           <li class="nav-item">
             <a
               @click="setActive(2)"
-              class="btn btn-light"
-              :class="active == 2 && 'active'"
+              class="btn"
+              :class="active == 2 ? 'btn-light' : ''"
               >Top Up</a
             >
           </li>
           <li class="nav-item">
             <a
               @click="setActive(3)"
-              class="btn btn-light"
-              :class="active == 3 && 'active'"
+              class="btn"
+              :class="active == 3 ? 'btn-light' : ''"
               >Voucher</a
             >
           </li>
           <li class="nav-item">
             <a
               @click="setActive(4)"
-              class="btn btn-light"
-              :class="active == 4 && 'active'"
+              class="btn"
+              :class="active == 4 ? 'btn-light' : ''"
               >Game</a
             >
           </li>
