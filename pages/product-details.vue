@@ -11,7 +11,7 @@
               />
             </div>
             <div class="gameTitle">
-              <h3 class="text-primary">{{getRoute()}}</h3>
+              <h3 class="text-primary">{{getName()}}</h3>
               <p>Game</p>
             </div>
           </div>
@@ -29,7 +29,7 @@
               <div class="payment-desc-container">
                 <i class="fas fa-info-circle text-warning"></i>
                 <p class="m-0">
-                  Top up Mobile Legend! Cukup dengan memasukkan ID otomatis
+                  Top up {{getName()}}! Cukup dengan memasukkan ID otomatis
                   dikirim tanpa perlu redeem kode voucher. Solusi Pembayaran
                   untuk iOS dan Android. Di halaman ini kamu dapat top up
                   langsung ke akun kamu.
@@ -436,7 +436,7 @@
 <script>
 export default {
   methods: {
-    getRoute() {
+    getName() {
     console.log(this._routerRoot._route.params.name);
       return this._routerRoot._route.params.name.replace(/-/g,' ');
     },
