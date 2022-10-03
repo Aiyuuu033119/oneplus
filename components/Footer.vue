@@ -1,150 +1,73 @@
 <template>
-  <div>
-    <section class="bg-white">
-      <div class="container">
-        <h5 class="text-secondary mb-2 card-subtitle">DUKUNGAN PELANGGAN</h5>
-        <h2 class="fw-bold mb-4 card-title">Hubungi kami</h2>
-        <div class="row">
-          <div class="col-6 col-lg-2 mb-3">
-            <nuxt-link to="" class="text-dark">
-              <div class="card border-0 rounded shadow p-4">
-                <div class="d-flex align-items-center flex-column gap-2">
-                  <Icon icon="logos:whatsapp" height="52px" />
-                  <div>Whatsapp</div>
-                </div>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="col-6 col-lg-2 mb-3">
-            <nuxt-link to="" class="text-dark">
-              <div class="card border-0 rounded shadow p-4">
-                <div class="d-flex align-items-center flex-column gap-2">
-                  <Icon
-                    icon="dashicons:email"
-                    height="52px"
-                    class="text-danger"
-                  />
-                  <div>Email</div>
-                </div>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="col-6 col-lg-2 mb-3">
-            <nuxt-link to="" class="text-dark">
-              <div class="card border-0 rounded shadow p-4">
-                <div class="d-flex align-items-center flex-column gap-2">
-                  <Icon
-                    icon="fluent:chat-help-24-filled"
-                    height="52px"
-                    class="text-danger"
-                  />
-                  <div>FAQ</div>
-                </div>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="col-6 col-lg-2 mb-3">
-            <nuxt-link to="" class="text-dark">
-              <div class="card border-0 rounded shadow p-4">
-                <div class="d-flex align-items-center flex-column gap-2">
-                  <Icon
-                    icon="si-glyph:customer-support"
-                    height="52px"
-                    class="text-danger"
-                  />
-                  <div>Hotline</div>
-                </div>
-              </div>
-            </nuxt-link>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <nuxt-link to="/"
+            ><img
+              src="https://vogame.co.id/assets/img/logo/logo2.png"
+              width="125"
+              class="mb-3"
+          /></nuxt-link>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-3">
+          <p class="m-0">
+            <strong>PT Maju Selaras Komputer</strong><br />
+            Ruko Citra Bisnis Park, Jalan Peta Barat Blok G No 23<br />
+            Kalideres - Jakarta Barat
+          </p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <ul class="list-unstyled">
+            <li>
+              <nuxt-link to="/">Syarat &amp; Ketentuan</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/">Hubungi Kami</nuxt-link>
+            </li>
+          </ul>
+          <div class="socialmedia">
+            <a
+              href="https://www.facebook.com/join.vogame/"
+              title=""
+              class="bg-facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="mailto:cs@vogame.id" title="" class="bg-youtube"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://twitter.com/OfficialVogame"
+              title=""
+              class="bg-twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/vogame.id/"
+              title=""
+              class="bg-instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="bg-light border-bottom pb-2">
-      <div class="container footer-sub">
-        <div class="mb-4"><img :src="logo" height="25px" /></div>
-        <div class="row">
-          <div class="col-12 col-lg-4 mb-4">
-            <small>{{ alamat }}</small>
-            <p class="m-0"><strong>PT Maju Selaras Komputer</strong></p>
-            <p class="m-0">
-              Ruko Citra Bisnis Park, Jalan Peta Barat Blok G No 23
-            </p>
-            <p class="m-0">Kalideres - Jakarta Barat</p>
-          </div>
-          <div class="col-12 col-lg-8 footer-menu mt-4">
-            <div class="d-flex align-items-center gap-3 justify-content-end">
-              <nuxt-link to="" class="text-dark">Syarat & Ketentuan</nuxt-link>
-              <nuxt-link to="" class="text-dark">Hubungi Kami</nuxt-link>
-            </div>
-
-            <div class="mt-3 d-flex align-items-center gap-3 justify-content-end">
-              <nuxt-link to="" class="text-dark">
-                <div class="social facebook border-0 rounded-circle p-2">
-                  <div class="d-flex align-items-center flex-column gap-2">
-                    <Icon icon="brandico:facebook" height="24px" class="text-white"/>
-                  </div>
-                </div>
-              </nuxt-link>
-              <nuxt-link to="" class="text-dark">
-                <div class="social email border-0 rounded-circle p-2">
-                  <div class="d-flex align-items-center flex-column gap-2">
-                    <Icon
-                      icon="bxs:envelope"
-                      height="24px"
-                      class="text-white"
-                    />
-                  </div>
-                </div>
-              </nuxt-link>
-              <nuxt-link to="" class="text-dark">
-                <div class="social twitter border-0 rounded-circle p-2">
-                  <div class="d-flex align-items-center flex-column gap-2">
-                    <Icon
-                      icon="akar-icons:twitter-fill"
-                      height="24px"
-                      class="text-white"
-                    />
-                  </div>
-                </div>
-              </nuxt-link>
-              <nuxt-link to="" class="text-dark">
-                <div class="social instagram border-0 rounded-circle p-2">
-                  <div class="d-flex align-items-center flex-column gap-2">
-                    <Icon
-                      icon="akar-icons:instagram-fill"
-                      height="24px"
-                      class="text-white"
-                    />
-                  </div>
-                </div>
-              </nuxt-link>
-            </div>
-          </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-3">
+          © 2020 - 2022 VOGAME. All Rights Reserved
+        </div>
+        <div class="col-12 col-lg-6 mb-3">
+          <a href="#top" class="copyright"
+            >Kembali keatas <i class="fas fa-arrow-up"></i
+          ></a>
         </div>
       </div>
-    </section>
-
-    <section class="bg-light pt-3 pb-5">
-      <div class="container footer-sub">
-        <div class="row">
-          <div class="col-12 col-lg-4 mb-3">
-            <small>© 2020 - 2022 VOGAME. All Rights Reserved</small>
-          </div>
-          <div class="col-12 col-lg-8 footer-menu">
-            <small
-              >Kembali keatas
-              <Icon
-                icon="akar-icons:arrow-up"
-                height="16px"
-                class="text-black"
-              />
-            </small>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+    </div>
+  </footer>
 </template>
 
 <script>
