@@ -6,7 +6,7 @@
           <div class="card-header border-bottom">
             <div class="d-flex align-items-center gap-2">
               <Icon icon="ant-design:field-time-outlined" height="24px" style="color: #FF5A5F;"/>
-              <h5 class="m-0">Pembayaran sedang diproses</h5>      
+              <h5 class="m-0 text-primary">Pembayaran sedang diproses</h5>      
             </div>
           </div>
           <div class="card-body">

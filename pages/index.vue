@@ -215,7 +215,7 @@
           <!-- Faveourite Games -->
           <div class="favGames">
             <div class="section-title-col sticky-top">
-              <h3 class="home-title">Produk Favourite</h3>
+              <h3 class="home-title text-primary">Produk Favourite</h3>
               <ul class="nav justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item">
                   <a
@@ -270,7 +270,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="card-title" title="Free Fire">
+                            <h5 class="text-white" title="Free Fire">
                               Call of Duty Mobile
                             </h5>
                           </div>
@@ -296,7 +296,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="card-title" title="Free Fire">
+                            <h5 class="text-white" title="Free Fire">
                               Mobile Legend
                             </h5>
                           </div>
@@ -331,7 +331,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="card-title" title="Free Fire">
+                            <h5 class="text-white" title="Free Fire">
                               Mobile Legend
                             </h5>
                           </div>
@@ -357,7 +357,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="card-title" title="Free Fire">GoRide</h5>
+                            <h5 class="text-white" title="Free Fire">GoRide</h5>
                           </div>
                         </div>
                         <div class="textWrap">
@@ -381,7 +381,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="card-title" title="Free Fire">GoCar</h5>
+                            <h5 class="text-white" title="Free Fire">GoCar</h5>
                           </div>
                         </div>
                         <div class="textWrap">
@@ -408,7 +408,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="card-title" title="Free Fire">
+                            <h5 class="text-white" title="Free Fire">
                               Diva Karaoke Express
                             </h5>
                           </div>
@@ -434,7 +434,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="card-title" title="Free Fire">
+                            <h5 class="text-white" title="Free Fire">
                               Skype Credit
                             </h5>
                           </div>
@@ -463,7 +463,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="card-title" title="Free Fire">
+                            <h5 class="text-white" title="Free Fire">
                               eBay Gift Card
                             </h5>
                           </div>
@@ -488,10 +488,10 @@
           <!-- Voucher List -->
           <div class="voucherList home-title">
             <div class="section-title-col sticky-top">
-              <h3 class="home-title">Semua Produk</h3>
+              <h3 class="home-title text-primary">Semua Produk</h3>
               <div class="cta">
                 <a
-                  href="/shop"
+                  href="/store"
                   title=""
                   class="btn btn-primary"
                   >Lihat Lainnya</a
@@ -516,7 +516,7 @@
                       alt="Arena of Valor"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Arena of Valor">
+                      <h5 class="text-white" title="Arena of Valor">
                         Arena of Valor
                       </h5>
                       <p class="card-text"></p>
@@ -541,7 +541,7 @@
                       alt="Point Blank DIRECT"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Point Blank DIRECT">
+                      <h5 class="text-white" title="Point Blank DIRECT">
                         Point Blank DIRECT
                       </h5>
                       <p class="card-text"></p>
@@ -566,7 +566,7 @@
                       alt="Battlenet Card"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Battlenet Card">
+                      <h5 class="text-white" title="Battlenet Card">
                         Battlenet Card
                       </h5>
                       <p class="card-text"></p>
@@ -591,7 +591,7 @@
                       alt="Grab Voucher"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Grab Voucher">
+                      <h5 class="text-white" title="Grab Voucher">
                         Grab Voucher
                       </h5>
                       <p class="card-text"></p>
@@ -616,7 +616,7 @@
                       alt="Dairy Queen"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Dairy Queen">
+                      <h5 class="text-white" title="Dairy Queen">
                         Dairy Queen
                       </h5>
                       <p class="card-text"></p>
@@ -641,7 +641,7 @@
                       alt="Bakmi Gm "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Bakmi Gm ">Bakmi Gm</h5>
+                      <h5 class="text-white" title="Bakmi Gm ">Bakmi Gm</h5>
                       <p class="card-text"></p>
                     </div>
                   </a>
@@ -661,7 +661,7 @@
                       alt="Excelso"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Excelso">Excelso</h5>
+                      <h5 class="text-white" title="Excelso">Excelso</h5>
                       <p class="card-text"></p>
                     </div>
                   </a>
@@ -684,7 +684,7 @@
                       alt="GREYHOUND CAFE"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="GREYHOUND CAFE">
+                      <h5 class="text-white" title="GREYHOUND CAFE">
                         GREYHOUND CAFE
                       </h5>
                       <p class="card-text"></p>
@@ -709,7 +709,7 @@
                       alt="Haagen Dazs"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Haagen Dazs">
+                      <h5 class="text-white" title="Haagen Dazs">
                         Haagen Dazs
                       </h5>
                       <p class="card-text"></p>
@@ -734,7 +734,7 @@
                       alt="Hong Kong Cafe"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Hong Kong Cafe">
+                      <h5 class="text-white" title="Hong Kong Cafe">
                         Hong Kong Cafe
                       </h5>
                       <p class="card-text"></p>
@@ -759,7 +759,7 @@
                       alt="Kafe Betawi"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Kafe Betawi">
+                      <h5 class="text-white" title="Kafe Betawi">
                         Kafe Betawi
                       </h5>
                       <p class="card-text"></p>
@@ -784,7 +784,7 @@
                       alt="Kantin Kendal"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Kantin Kendal">
+                      <h5 class="text-white" title="Kantin Kendal">
                         Kantin Kendal
                       </h5>
                       <p class="card-text"></p>
@@ -809,7 +809,7 @@
                       alt="Call of Duty Mobile"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Call of Duty Mobile">
+                      <h5 class="text-white" title="Call of Duty Mobile">
                         Call of Duty Mobile
                       </h5>
                       <p class="card-text"></p>
@@ -834,7 +834,7 @@
                       alt="Kimukatsu"
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Kimukatsu">Kimukatsu</h5>
+                      <h5 class="text-white" title="Kimukatsu">Kimukatsu</h5>
                       <p class="card-text"></p>
                     </div>
                   </a>
@@ -850,7 +850,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3>Top-up atau Beli item game, termurah dan tercepat di Vogame</h3>
+            <h3 class="text-primary">Top-up atau Beli item game, termurah dan tercepat di Vogame</h3>
           </div>
         </div>
         <div class="row">
@@ -860,7 +860,7 @@
               title="illustration 1"
               width="120"
             />
-            <h5>Top Up Game Favoritmu</h5>
+            <h5 class="text-primary">Top Up Game Favoritmu</h5>
             <p class="card-text">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
@@ -872,7 +872,7 @@
               title="illustration 2"
               width="120"
             />
-            <h5>Pilih Nominal Dan Bayar</h5>
+            <h5 class="text-primary">Pilih Nominal Dan Bayar</h5>
             <p class="card-text">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
@@ -884,7 +884,7 @@
               title="illustration 3"
               width="120"
             />
-            <h5>Dapatkan Item/Voucher</h5>
+            <h5 class="text-primary">Dapatkan Item/Voucher</h5>
             <p class="card-text">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
@@ -899,7 +899,7 @@
           <!-- News & Promo -->
           <div class="newsPromo home-title">
             <div class="section-title-col sticky-top">
-              <h3 class="home-title">BERITA DAN PROMOSI</h3>
+              <h3 class="home-title text-primary">BERITA DAN PROMOSI</h3>
               <div class="cta">
                 <a
                   href="https://vogame.id/blog"
@@ -925,7 +925,7 @@
                   /></a>
                   <div class="card-body">
                     <h5
-                      class="card-title"
+                      class="text-white"
                       title="Ini Dia Hero Mage Terbaik Yang Bisa Kamu Gunakan Di Akhir Season 20 MLBB !"
                     >
                       <a href="#" title=""
@@ -968,7 +968,7 @@
                   /></a>
                   <div class="card-body">
                     <h5
-                      class="card-title"
+                      class="text-white"
                       title="Kamu Di Tier Warrior Ingin Naik Ke Epic ? Pakai Hero-Hero Ini !"
                     >
                       <a href="#" title=""

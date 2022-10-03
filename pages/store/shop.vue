@@ -21,7 +21,7 @@
               alt="Mobile Legend"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Mobile Legend">Mobile Legend</h5>
+              <h5 class="card-title text-primary" title="Mobile Legend">Mobile Legend</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -42,7 +42,7 @@
               alt="GoRide"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="GoRide">GoRide</h5>
+              <h5 class="card-title text-primary" title="GoRide">GoRide</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -63,7 +63,7 @@
               alt="GoCar"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="GoCar">GoCar</h5>
+              <h5 class="card-title text-primary" title="GoCar">GoCar</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -84,7 +84,7 @@
               alt="Diva Karaoke Express"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Diva Karaoke Express">
+              <h5 class="card-title text-primary" title="Diva Karaoke Express">
                 Diva Karaoke Express
               </h5>
               <p class="card-text"></p>
@@ -107,7 +107,7 @@
               alt="Skype Credit"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Skype Credit">Skype Credit</h5>
+              <h5 class="card-title text-primary" title="Skype Credit">Skype Credit</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -128,7 +128,7 @@
               alt="eBay Gift Card"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="eBay Gift Card">eBay Gift Card</h5>
+              <h5 class="card-title text-primary" title="eBay Gift Card">eBay Gift Card</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -149,7 +149,7 @@
               alt="iTunes Gift Card (US Region)"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="iTunes Gift Card (US Region)">
+              <h5 class="card-title text-primary" title="iTunes Gift Card (US Region)">
                 iTunes Gift Card (US Region)
               </h5>
               <p class="card-text"></p>
@@ -172,7 +172,7 @@
               alt="H&amp;M"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="H&amp;M">H&amp;M</h5>
+              <h5 class="card-title text-primary" title="H&amp;M">H&amp;M</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -193,7 +193,7 @@
               alt="OYO Rooms"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="OYO Rooms">OYO Rooms</h5>
+              <h5 class="card-title text-primary" title="OYO Rooms">OYO Rooms</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -214,7 +214,7 @@
               alt="Saint Cinnamon"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Saint Cinnamon">Saint Cinnamon</h5>
+              <h5 class="card-title text-primary" title="Saint Cinnamon">Saint Cinnamon</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -235,7 +235,7 @@
               alt="OrangeGame"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="OrangeGame">OrangeGame</h5>
+              <h5 class="card-title text-primary" title="OrangeGame">OrangeGame</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -256,7 +256,7 @@
               alt="Nintendo (US Region)"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Nintendo (US Region)">
+              <h5 class="card-title text-primary" title="Nintendo (US Region)">
                 Nintendo (US Region)
               </h5>
               <p class="card-text"></p>

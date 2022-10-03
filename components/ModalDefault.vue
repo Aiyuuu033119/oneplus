@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title"><slot name="modal-title"></slot></h5>
+          <h5 class="text-primary modal-title"><slot name="modal-title"></slot></h5>
           <slot name="modal-close">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @click="$emit('close')">
               <!-- <Icon icon="bi:x" height="24px"/> -->

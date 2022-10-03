@@ -8,7 +8,7 @@
         <div class="col-12 col-lg-8 content-wrap">
           <div class="card border-0 rounded">
             <div class="card-header border-bottom">
-              <h5>Selesaikan Pembayaran Anda</h5>
+              <h5 class="text-primary">Selesaikan Pembayaran Anda</h5>
             </div>
             <div class="card-body">
               <div>Mohon selesaikan pembayaran anda dengan mengikuti petunjuk yang telah dikirimkan. Setelah pembayaran terkonfirmasi pembelian akan dikirim secepatnya. Terima kasih telah menggunakan codegame.</div>
@@ -40,7 +40,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Detail Pembayaran</h5>
+          <h5 class="modal-title text-primary" id="exampleModalLongTitle">Detail Pembayaran</h5>
           <button type="button" class="close" @click="modalClosed" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>

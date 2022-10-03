@@ -6,7 +6,7 @@
         {{ initial }}
       </div>
       <div class="d-grid gap-2 text-white">
-        <h5 class="m-0">{{ username }}</h5>
+        <h5 class="m-0 text-primary">{{ username }}</h5>
         <div>Bergabung sejak {{ joindate }}</div>
       </div>
     </div>

@@ -3,13 +3,13 @@
     <div class="bg-hive">
       <section>
         <div class="container">
-          <h3 class="text-white mt-5">Terms and Conditions</h3>
+          <h3 class="text-white mt-5 text-primary">Terms and Conditions</h3>
         </div>
       </section>
     </div>
     <div class="container">
       <section>
-        <h5>Welcome to codegame!</h5>
+        <h5 class="text-primary">Welcome to codegame!</h5>
 
         <p>These terms and conditions outline the rules and regulations for the use of codegame's Website, located at codegame.</p>
 

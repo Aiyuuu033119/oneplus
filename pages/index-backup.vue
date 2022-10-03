@@ -12,7 +12,7 @@
     </div>
     <section>
       <h5 class="text-white mb-2 card-subtitle">GAME DAN VOUCHER</h5>
-      <h2 class="text-white fw-bold mb-4 card-title">Flash Top-Up</h2>
+      <h2 class="text-primary" class="text-white fw-bold mb-4 card-title">Flash Top-Up</h2>
 
       <ul class="tabs-slider nav nav-pills gap-2 mb-3 howto overflow-auto" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">

@@ -21,7 +21,7 @@
               alt="Mobile Legend"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Mobile Legend">Mobile Legend</h5>
+              <h5 class="card-title text-primary" title="Mobile Legend">Mobile Legend</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -42,7 +42,7 @@
               alt="OrangeGame"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="OrangeGame">OrangeGame</h5>
+              <h5 class="card-title text-primary" title="OrangeGame">OrangeGame</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -63,7 +63,7 @@
               alt="Nintendo (US Region)"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Nintendo (US Region)">
+              <h5 class="card-title text-primary" title="Nintendo (US Region)">
                 Nintendo (US Region)
               </h5>
               <p class="card-text"></p>
@@ -86,7 +86,7 @@
               alt="Mojang Minecraft"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Mojang Minecraft">
+              <h5 class="card-title text-primary" title="Mojang Minecraft">
                 Mojang Minecraft
               </h5>
               <p class="card-text"></p>
@@ -109,7 +109,7 @@
               alt="Marvel Super War"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Marvel Super War">
+              <h5 class="card-title text-primary" title="Marvel Super War">
                 Marvel Super War
               </h5>
               <p class="card-text"></p>
@@ -132,7 +132,7 @@
               alt="Blizzard"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Blizzard">Blizzard</h5>
+              <h5 class="card-title text-primary" title="Blizzard">Blizzard</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -153,7 +153,7 @@
               alt="XBOX (US REGION)"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="XBOX (US REGION)">
+              <h5 class="card-title text-primary" title="XBOX (US REGION)">
                 XBOX (US REGION)
               </h5>
               <p class="card-text"></p>
@@ -176,7 +176,7 @@
               alt="WAWA GAMES"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="WAWA GAMES">WAWA GAMES</h5>
+              <h5 class="card-title text-primary" title="WAWA GAMES">WAWA GAMES</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -197,7 +197,7 @@
               alt=" SPEED DRIFTERS"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title=" SPEED DRIFTERS">SPEED DRIFTERS</h5>
+              <h5 class="card-title text-primary" title=" SPEED DRIFTERS">SPEED DRIFTERS</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -218,7 +218,7 @@
               alt="SKYEGRID"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="SKYEGRID">SKYEGRID</h5>
+              <h5 class="card-title text-primary" title="SKYEGRID">SKYEGRID</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -239,7 +239,7 @@
               alt="Razer Pin"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="Razer Pin">Razer Pin</h5>
+              <h5 class="card-title text-primary" title="Razer Pin">Razer Pin</h5>
               <p class="card-text"></p>
             </div>
           </a>
@@ -260,7 +260,7 @@
               alt="PUBG FOR PC (STEAM)"
             ></div>
             <div class="card-body">
-              <h5 class="card-title" title="PUBG FOR PC (STEAM)">
+              <h5 class="card-title text-primary" title="PUBG FOR PC (STEAM)">
                 PUBG FOR PC (STEAM)
               </h5>
               <p class="card-text"></p>

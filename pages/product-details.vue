@@ -11,7 +11,7 @@
               />
             </div>
             <div class="gameTitle">
-              <h3>{{getRoute()}}</h3>
+              <h3 class="text-primary">{{getRoute()}}</h3>
               <p>Game</p>
             </div>
           </div>
@@ -260,7 +260,7 @@
               <div class="payment-step-container">
                 <h6 class="d-block" for="totalPrice">Harga</h6>
                 <div class="section-price">
-                  <h3 id="hargaPilih" class="text-dark my-2 myharga">
+                  <h3 id="hargaPilih" class="text-dark my-2 myharga text-primary">
                     Rp. 3.150 - 1.050.000
                   </h3>
                   <a
@@ -285,7 +285,7 @@
           <!-- Flash Topup -->
           <div class="flashTopup">
             <div class="section-title-col">
-              <h3 class="home-title">Produk Game Lainnya</h3>
+              <h3 class="home-title text-primary">Produk Game Lainnya</h3>
             </div>
             <div class="section-home-col seven-col">
               <div class="cardSize">
@@ -304,7 +304,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="PLAYSTATION (US REGION)">
+                      <h5 class="card-title text-primary" title="PLAYSTATION (US REGION)">
                         PLAYSTATION (US REGION)
                       </h5>
                       <p class="card-text">Game</p>
@@ -325,7 +325,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Lokapala">Lokapala</h5>
+                      <h5 class="card-title text-primary" title="Lokapala">Lokapala</h5>
                       <p class="card-text">Game</p>
                     </div>
                   </a>
@@ -347,7 +347,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Garena Shell New">
+                      <h5 class="card-title text-primary" title="Garena Shell New">
                         Garena Shell New
                       </h5>
                       <p class="card-text">Game</p>
@@ -371,7 +371,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="PUBG FOR PC (STEAM)">
+                      <h5 class="card-title text-primary" title="PUBG FOR PC (STEAM)">
                         PUBG FOR PC (STEAM)
                       </h5>
                       <p class="card-text">Game</p>
@@ -395,7 +395,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="OrangeGame">OrangeGame</h5>
+                      <h5 class="card-title text-primary" title="OrangeGame">OrangeGame</h5>
                       <p class="card-text">Game</p>
                     </div>
                   </a>
@@ -417,7 +417,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title" title="Free Fire Voucher">
+                      <h5 class="card-title text-primary" title="Free Fire Voucher">
                         Free Fire Voucher
                       </h5>
                       <p class="card-text">Game</p>

@@ -2,7 +2,7 @@
   <section class="bgwhite p-t-55 p-b-65">
     <div class="container">
       <div class="section-title-col sticky-top">
-        <h3 class="home-title">Cari Top Up Game atau Voucher</h3>
+        <h3 class="home-title text-primary">Cari Top Up Game atau Voucher</h3>
         <ul class="nav justify-content-center" id="myTab" role="tablist">
           <li class="nav-item">
             <a
