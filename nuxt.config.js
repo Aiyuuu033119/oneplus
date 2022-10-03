@@ -105,27 +105,33 @@ export default {
         }
       })
       routes.push({
+        path: '/store',
+        components: {
+          default: resolve(__dirname, 'pages/store/index.vue'), // or routes[index].component
+        }
+      }),
+      routes.push({
         path: '/shop',
         components: {
-          default: resolve(__dirname, 'pages/shop.vue'), // or routes[index].component
+          default: resolve(__dirname, 'pages/store/shop.vue'), // or routes[index].component
         }
       }),
       routes.push({
         path: '/top-up',
         components: {
-          default: resolve(__dirname, 'pages/topup.vue'), // or routes[index].component
+          default: resolve(__dirname, 'pages/store/topup.vue'), // or routes[index].component
         }
       }),
       routes.push({
         path: '/voucher',
         components: {
-          default: resolve(__dirname, 'pages/voucher.vue'), // or routes[index].component
+          default: resolve(__dirname, 'pages/store/voucher.vue'), // or routes[index].component
         }
       }),
       routes.push({
         path: '/game',
         components: {
-          default: resolve(__dirname, 'pages/game.vue'), // or routes[index].component
+          default: resolve(__dirname, 'pages/store/game.vue'), // or routes[index].component
         }
       }),
       routes.push({
