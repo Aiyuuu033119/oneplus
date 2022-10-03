@@ -8,7 +8,7 @@
   >
     <div class="section-home-col seven-col mb-5">
       <div class="col-12 text-center m-tb-40">
-        <h2><mark>Produk Kosong</mark></h2>
+        <h2 class="text-primary"><mark>Produk Kosong</mark></h2>
       </div>
     </div>
 

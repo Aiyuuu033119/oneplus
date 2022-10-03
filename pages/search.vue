@@ -6,7 +6,7 @@
           <div class="card border-0 rounded shadow-sm">
             <div class="card-header border-bottom">
               <div class="d-flex align-items-center gap-2">
-                <h5 class="m-0" v-html="searchtitle"></h5>
+                <h5 class="m-0 text-primary" v-html="searchtitle"></h5>
               </div>
             </div>
             <div class="card-body">

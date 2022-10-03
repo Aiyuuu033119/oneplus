@@ -3,13 +3,13 @@
     <div class="bg-hive">
       <section>
         <div class="container">
-          <h3 class="text-white mt-5">Program Kemitraan</h3>
+          <h3 class="text-white mt-5 text-primary">Program Kemitraan</h3>
         </div>
       </section>
     </div>
     <div class="container">
       <section>
-        <h5 class="mb-4">Mulailah bekerja sama dengan kami!</h5>
+        <h5 class="mb-4 text-primary">Mulailah bekerja sama dengan kami!</h5>
         <form>
           <div class="row">
             <div class="col-12 col-lg-6">

@@ -11,7 +11,7 @@
               <div class="card-header">
                 <div class="d-flex align-items-center gap-3">
                   <div class="ratio ratio-1x1 avatar avatar-sm bg-primary rounded-pill">1</div>
-                  <h5 class="card-subtitle m-0">Masukan ID Pengguna</h5>
+                  <h5 class="card-subtitle m-0 text-primary card-subtitle">Masukan ID Pengguna</h5>
                 </div>
               </div>
               <div class="card-body pt-0">
@@ -34,7 +34,7 @@
               <div class="card-header">
                 <div class="d-flex align-items-center gap-3">
                   <div class="ratio ratio-1x1 avatar avatar-sm bg-primary rounded-pill">2</div>
-                  <h5 class="card-subtitle m-0">Pilih Nominal</h5>
+                  <h5 class="card-subtitle m-0 text-primary">Pilih Nominal</h5>
                 </div>
               </div>
               <div class="card-body pt-0">
@@ -52,22 +52,22 @@
               <div class="card-header">
                 <div class="d-flex align-items-center gap-3">
                   <div class="ratio ratio-1x1 avatar avatar-sm bg-primary rounded-pill">3</div>
-                  <h5 class="card-subtitle m-0">Pilih Metode Pembayaran</h5>
+                  <h5 class="card-subtitle m-0 text-primary">Pilih Metode Pembayaran</h5>
                 </div>
               </div>
               <div class="card-body pt-0">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
 
                   <div class="accordion-item shadow-sm rounded mb-3 overflow-hidden">
-                    <h2 class="accordion-header" id="flush-headingOne">
+                    <h2 class="accordion-header text-primary" id="flush-headingOne">
                       <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         <div class="d-grid w-100 position-relative">
                           <div class="d-flex align-items-center justify-content-between p-3">
                             <div class="d-flex align-items-center gap-2">
                               <Icon icon="clarity:bank-solid" height="24px" class="text-danger"/> 
-                              <h5 class="card-subtitle m-0">Transfer Bank</h5>
+                              <h5 class="card-subtitle m-0 text-primary">Transfer Bank</h5>
                             </div>
-                            <h5 class="card-subtitle m-0 text-danger text-end">IDR. 1.000.000 - 1.050.000</h5>
+                            <h5 class="card-subtitle m-0 text-primary text-danger text-end">IDR. 1.000.000 - 1.050.000</h5>
                           </div>
                           <div class="d-flex flex-wrap align-items-center gap-4 p-3 py-4 bg-gray logo-bank">
                             <img src="/img/methods/bank-bca.svg" height="16px">
@@ -88,7 +88,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/bank-bca.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.050.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.050.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -103,7 +103,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/bank-bri.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.050.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.050.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -118,7 +118,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/bank-bni.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.050.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.050.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -133,7 +133,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/bank-btpn.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.000.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.000.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -148,7 +148,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/bank-cimb.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.000.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.000.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -163,15 +163,15 @@
                   </div><!-- item --> 
 
                   <div class="accordion-item shadow-sm rounded mb-3 overflow-hidden">
-                    <h2 class="accordion-header" id="flush-headingTwo">
+                    <h2 class="accordion-header text-primary" id="flush-headingTwo">
                       <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                         <div class="d-grid w-100 position-relative">
                           <div class="d-flex align-items-center justify-content-between p-3">
                             <div class="d-flex align-items-center gap-2">
                               <Icon icon="bx:bxs-wallet" height="24px" class="text-danger"/> 
-                              <h5 class="card-subtitle m-0">E-Money</h5>
+                              <h5 class="card-subtitle m-0 text-primary">E-Money</h5>
                             </div>
-                            <h5 class="card-subtitle m-0 text-danger text-end">IDR. 1.000.000 - 1.050.000</h5>
+                            <h5 class="card-subtitle m-0 text-primary text-danger text-end">IDR. 1.000.000 - 1.050.000</h5>
                           </div>
                           <div class="d-flex flex-wrap align-items-center gap-4 p-3 py-4 bg-gray logo-bank">
                             <img src="/img/methods/gopay.svg" height="16px">
@@ -192,7 +192,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/gopay.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.050.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.050.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -207,7 +207,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/ovo.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.050.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.050.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -222,7 +222,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/shopeepay.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.050.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.050.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -237,7 +237,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/dana.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.000.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.000.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -252,7 +252,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/linkaja.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.000.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.000.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -267,15 +267,15 @@
                   </div><!-- item -->
 
                   <div class="accordion-item shadow-sm rounded mb-3 overflow-hidden">
-                    <h2 class="accordion-header" id="flush-headingThree">
+                    <h2 class="accordion-header text-primary" id="flush-headingThree">
                       <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                         <div class="d-grid w-100 position-relative">
                           <div class="d-flex align-items-center justify-content-between p-3">
                             <div class="d-flex align-items-center gap-2">
                               <Icon icon="mdi:cellphone" height="24px" class="text-danger"/> 
-                              <h5 class="card-subtitle m-0">Pulsa</h5>
+                              <h5 class="card-subtitle m-0 text-primary">Pulsa</h5>
                             </div>
-                            <h5 class="card-subtitle m-0 text-danger text-end">IDR. 1.000.000 - 1.050.000</h5>
+                            <h5 class="card-subtitle m-0 text-primary text-danger text-end">IDR. 1.000.000 - 1.050.000</h5>
                           </div>
                           <div class="d-flex flex-wrap align-items-center gap-4 p-3 py-4 bg-gray logo-bank">
                             <img src="/img/methods/telkomsel.svg" height="16px">
@@ -296,7 +296,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/telkomsel.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.050.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.050.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -311,7 +311,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/indosat.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.050.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.050.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -326,7 +326,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/xl.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.050.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.050.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -341,7 +341,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/axis.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.000.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.000.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -356,7 +356,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/smartfren.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.000.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.000.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -371,15 +371,15 @@
                   </div><!-- item -->
 
                   <div class="accordion-item shadow-sm rounded mb-3 overflow-hidden">
-                    <h2 class="accordion-header" id="flush-headingFour">
+                    <h2 class="accordion-header text-primary" id="flush-headingFour">
                       <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                         <div class="d-grid w-100 position-relative">
                           <div class="d-flex align-items-center justify-content-between p-3">
                             <div class="d-flex align-items-center gap-2">
                               <Icon icon="ic:baseline-store" height="24px" class="text-danger"/> 
-                              <h5 class="card-subtitle m-0">Mini Market</h5>
+                              <h5 class="card-subtitle m-0 text-primary">Mini Market</h5>
                             </div>
-                            <h5 class="card-subtitle m-0 text-danger text-end">IDR. 1.000.000 - 1.050.000</h5>
+                            <h5 class="card-subtitle m-0 text-primary text-danger text-end">IDR. 1.000.000 - 1.050.000</h5>
                           </div>
                           <div class="d-flex flex-wrap align-items-center gap-4 p-3 py-4 bg-gray logo-bank">
                             <img src="/img/methods/indomaret.svg" height="16px">
@@ -397,7 +397,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/indomaret.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.050.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.050.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -412,7 +412,7 @@
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
                                     <img src="/img/methods/alfamart.svg" height="32px" width="80px">
-                                    <h5 class="card-subtitle m-0 text-danger">1.000.000</h5>
+                                    <h5 class="card-subtitle m-0 text-primary text-danger">1.000.000</h5>
                                   </div>
                                 </div>
                                 <div class="card-body">
@@ -461,7 +461,7 @@
             <div class="fw-bold text-end">IDR. 1.000.000</div>
           </div>
           <div class="divider-dots"></div>
-          <h5 class="m-0">Info Billing</h5>
+          <h5 class="m-0 text-primary">Info Billing</h5>
           <form>
             <div class="mb-3">
               <input type="email" class="form-control form-control-lg rounded" id="emailInput" placeholder="Masukkan alamat Email">
@@ -540,7 +540,7 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
-            <h5>BCA Virtual Account</h5>
+            <h5 class="text-primary">BCA Virtual Account</h5>
             <div>
               <p><b>Step 1:</b><br>
               Kunjungi link <nuxt-link to="">https://www.codegame.com/mobile-legends</nuxt-link> , Pilih tipe denominasi yang diinginkan.</p>

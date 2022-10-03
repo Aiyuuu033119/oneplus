@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-5">
     <div class="m-b-30 text-center">
-      <h1><b>Contact Us</b></h1>
+      <h1 class="text-primary"><b>Contact Us</b></h1>
     </div>
     <ol>
       <p>

@@ -7,7 +7,7 @@
             <div class="card-header border-bottom">
               <div class="d-flex align-items-center gap-2">
                 <Icon icon="bx:bx-time" height="24px" style="color: #FF5A5F;"/>
-                <h5 class="m-0">History Transaksi</h5>
+                <h5 class="m-0 text-primary ">History Transaksi</h5>
               </div>
             </div>
             <div class="card-body">

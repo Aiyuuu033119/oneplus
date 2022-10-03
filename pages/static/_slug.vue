@@ -3,7 +3,7 @@
     <div class="bg-hive">
       <section>
         <div class="container">
-          <h3 class="text-white mt-5">{{judulPage}}</h3>
+          <h3 class="text-white mt-5 text-primary">{{judulPage}}</h3>
         </div>
       </section>
     </div>

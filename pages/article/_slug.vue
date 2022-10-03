@@ -6,7 +6,7 @@
       </div>
       <section>
         <div class="text-primary"><small>{{ tglBerita }} • {{ catBerita }}</small></div>
-        <h1>{{ judulBerita }}</h1>
+        <h1 class="text-primary">{{ judulBerita }}</h1>
         <div class="text-dark mb-3" v-html="contentBerita"></div>
         <div class="btn-share">
           <button class="btn btn-link bg-transparent border-0"><Icon icon="logos:whatsapp" height="36px"/></button>

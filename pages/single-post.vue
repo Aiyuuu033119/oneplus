@@ -6,7 +6,7 @@
       </div>
       <section>
         <div class="text-primary"><small>19 OCT 2021 • Promo</small></div>
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tempus, ac aliquet et quis enim lobortis. </h1>
+        <h1 class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa tempus, ac aliquet et quis enim lobortis. </h1>
         <div class="text-dark mb-3">
           <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc porta tellus vel diam imperdiet, ut commodo nisi tincidunt. Nullam eros arcu, laoreet et eleifend non, vehicula vel nisl. Etiam blandit dignissim ligula nec pretium. Curabitur at mauris viverra, mollis nulla porttitor, commodo nulla. Nunc et pellentesque urna. Nunc posuere, mi quis mattis sodales, ligula turpis suscipit odio, at lobortis turpis magna aliquam dui. Sed posuere, tortor id sollicitudin gravida, neque tortor gravida lorem, ac posuere quam ex sed ex. Donec scelerisque ac turpis at facilisis. Aliquam metus ligula, egestas in rutrum sit amet, elementum vitae diam. Etiam condimentum cursus pharetra. Duis non sagittis lorem.</p>
 
