@@ -34,7 +34,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/css/duniasegame.scss',
+    '@/assets/css/gamespedia.scss',
     '@/assets/css/main.scss',
   ],
 
