@@ -22,10 +22,10 @@
         <div class="col-12 col-lg-6">
           <ul class="list-unstyled">
             <li>
-              <nuxt-link to="/">Syarat &amp; Ketentuan</nuxt-link>
+              <nuxt-link to="/" class="link-color link-hover-color">Syarat &amp; Ketentuan</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/contact-us">Hubungi Kami</nuxt-link>
+              <nuxt-link to="/contact-us" class="link-color link-hover-color">Hubungi Kami</nuxt-link>
             </li>
           </ul>
           <div class="socialmedia">
@@ -61,7 +61,7 @@
           © 2020 - 2022 VOGAME. All Rights Reserved
         </div>
         <div class="col-12 col-lg-6 mb-3">
-          <a href="#top" class="copyright"
+          <a href="#top" class="copyright link-color link-hover-color"
             >Kembali keatas <i class="fas fa-arrow-up"></i
           ></a>
         </div>

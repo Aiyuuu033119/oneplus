@@ -12,4 +12,8 @@ $theme-colors: (
     "warning":    #ecd300,
     "danger":     #ff1b0e,
 );
+
+$link-color:                 #040001;
+$link-hover-color:           #0368c4;
+
 @import "~bootstrap/scss/bootstrap";
