@@ -6,7 +6,7 @@
           <nuxt-link to="/"
             >
             <img
-              src="../assets/img/logoFooter.png"
+              :src="require('../assets/img/'+ appName + '/logoFooter.png')"
               title="vogame"
               width="120"
               class="mb-3"
