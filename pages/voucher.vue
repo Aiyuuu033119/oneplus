@@ -5,26 +5,16 @@
         <h3 class="home-title">Cari Top Up Game atau Voucher</h3>
         <ul class="nav justify-content-center" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="btn btn-light active" href="/shop"
-              >Semua Produk</a
-            >
+            <a class="btn btn-light" href="/shop">Semua Produk</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-light" href="/top-up"
-              >Top Up</a
-            >
+            <a class="btn btn-light" href="/top-up">Top Up</a>
           </li>
           <li class="nav-item">
-            <a
-              class="btn btn-light"
-              href="/voucher"
-              >Voucher</a
-            >
+            <a class="btn btn-light active" href="/voucher">Voucher</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-light" href="/game"
-              >Game</a
-            >
+            <a class="btn btn-light" href="/game">Game</a>
           </li>
         </ul>
       </div>
@@ -36,29 +26,6 @@
           aria-labelledby="one-tab"
         >
           <div class="section-home-col seven-col mb-5">
-            <div class="cardSize">
-              <div class="card">
-                <a href="/product-details/Mobile-Legend" title="">
-                  <div
-                    class="card-img-top"
-                    style="
-                      height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220801121105.jpg');
-                      background-size: cover;
-                      background-position: center center;
-                    "
-                    alt="Mobile Legend"
-                  ></div>
-                  <div class="card-body">
-                    <h5 class="card-title" title="Mobile Legend">
-                      Mobile Legend
-                    </h5>
-                    <p class="card-text"></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
             <div class="cardSize">
               <div class="card">
                 <a href="/product-details/GoRide" title="">
@@ -176,7 +143,7 @@
             <div class="cardSize">
               <div class="card">
                 <a
-                  href="/product-details/iTunes-Gift-Card-US-Region"
+                  href="/product-details/iTunes-Gift-Card-US-Region-"
                   title=""
                 >
                   <div
@@ -266,19 +233,24 @@
 
             <div class="cardSize">
               <div class="card">
-                <a href="/product-details/OrangeGame" title="">
+                <a
+                  href="/product-details/POINT-BLANK-VOUCHER"
+                  title=""
+                >
                   <div
                     class="card-img-top"
                     style="
                       height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220619004243.jpg');
+                      background: url('https://vogame.id/cdn/kategori/cat_20220618232611.jpg');
                       background-size: cover;
                       background-position: center center;
                     "
-                    alt="OrangeGame"
+                    alt="POINT BLANK VOUCHER"
                   ></div>
                   <div class="card-body">
-                    <h5 class="card-title" title="OrangeGame">OrangeGame</h5>
+                    <h5 class="card-title" title="POINT BLANK VOU">
+                      POINT BLANK VOU
+                    </h5>
                     <p class="card-text"></p>
                   </div>
                 </a>
@@ -288,23 +260,44 @@
             <div class="cardSize">
               <div class="card">
                 <a
-                  href="/product-details/Nintendo-US-Region-"
+                  href="/product-details/Teahouse-by-Soup-Restauran"
                   title=""
                 >
                   <div
                     class="card-img-top"
                     style="
                       height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220619003223.jpg');
+                      background: url('https://vogame.id/cdn/kategori/cat_20220618140208.png');
                       background-size: cover;
                       background-position: center center;
                     "
-                    alt="Nintendo (US Region)"
+                    alt="Teahouse by Soup R"
                   ></div>
                   <div class="card-body">
-                    <h5 class="card-title" title="Nintendo (US Region)">
-                      Nintendo (US Region)
+                    <h5 class="card-title" title="Teahouse by Soup R">
+                      Teahouse by Soup R
                     </h5>
+                    <p class="card-text"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cardSize">
+              <div class="card">
+                <a href="https://vogame.id/produk/Sunny-Side" title="">
+                  <div
+                    class="card-img-top"
+                    style="
+                      height: 139px;
+                      background: url('https://vogame.id/cdn/kategori/cat_20220618135809.png');
+                      background-size: cover;
+                      background-position: center center;
+                    "
+                    alt="Sunny Side"
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title" title="Sunny Side">Sunny Side</h5>
                     <p class="card-text"></p>
                   </div>
                 </a>

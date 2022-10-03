@@ -99,7 +99,7 @@ export default {
     return {
       searchval: "",
       title: "Isigame",
-      logo: "img/logo.png",
+      logo: "/img/logo.png",
       alamat: "",
       notelp: "",
       whatsapp: "",
@@ -110,7 +110,7 @@ export default {
     var vuedis = this;
     this.$axios.get("/mobileapi/s7xs6oast").then((result) => {
       vuedis.title = result.data.nama;
-      vuedis.logo = result.data.logo != "" ? result.data.logo : "img/logo.png";
+      vuedis.logo = result.data.logo != "" ? result.data.logo : "/img/logo.png";
       vuedis.notelp = result.data.telp;
       vuedis.alamat = result.data.alamat;
       vuedis.whatsapp = result.data.wa;

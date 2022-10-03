@@ -5,26 +5,16 @@
         <h3 class="home-title">Cari Top Up Game atau Voucher</h3>
         <ul class="nav justify-content-center" id="myTab" role="tablist">
           <li class="nav-item">
-            <a class="btn btn-light active" href="/shop"
-              >Semua Produk</a
-            >
+            <a class="btn btn-light" href="/shop">Semua Produk</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-light" href="/top-up"
-              >Top Up</a
-            >
+            <a class="btn btn-light" href="/top-up">Top Up</a>
           </li>
           <li class="nav-item">
-            <a
-              class="btn btn-light"
-              href="/voucher"
-              >Voucher</a
-            >
+            <a class="btn btn-light" href="/voucher">Voucher</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-light" href="/game"
-              >Game</a
-            >
+            <a class="btn btn-light active" href="/game">Game</a>
           </li>
         </ul>
       </div>
@@ -43,7 +33,7 @@
                     class="card-img-top"
                     style="
                       height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220801121105.jpg');
+                      background: url('https://vogame.id/cdn/kategori/cat_20220801121105.jpg');
                       background-size: cover;
                       background-position: center center;
                     "
@@ -61,217 +51,12 @@
 
             <div class="cardSize">
               <div class="card">
-                <a href="/product-details/GoRide" title="">
-                  <div
-                    class="card-img-top"
-                    style="
-                      height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220622153352.jpg');
-                      background-size: cover;
-                      background-position: center center;
-                    "
-                    alt="GoRide"
-                  ></div>
-                  <div class="card-body">
-                    <h5 class="card-title" title="GoRide">GoRide</h5>
-                    <p class="card-text"></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardSize">
-              <div class="card">
-                <a href="/product-details/GoCar" title="">
-                  <div
-                    class="card-img-top"
-                    style="
-                      height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220622152228.jpg');
-                      background-size: cover;
-                      background-position: center center;
-                    "
-                    alt="GoCar"
-                  ></div>
-                  <div class="card-body">
-                    <h5 class="card-title" title="GoCar">GoCar</h5>
-                    <p class="card-text"></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardSize">
-              <div class="card">
-                <a
-                  href="/product-details/Diva-Karaoke-Express"
-                  title=""
-                >
-                  <div
-                    class="card-img-top"
-                    style="
-                      height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220622151232.jpg');
-                      background-size: cover;
-                      background-position: center center;
-                    "
-                    alt="Diva Karaoke Express"
-                  ></div>
-                  <div class="card-body">
-                    <h5 class="card-title" title="Diva Karaoke Express">
-                      Diva Karaoke Express
-                    </h5>
-                    <p class="card-text"></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardSize">
-              <div class="card">
-                <a href="/product-details/Skype-Credit" title="">
-                  <div
-                    class="card-img-top"
-                    style="
-                      height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220622140900.jpg');
-                      background-size: cover;
-                      background-position: center center;
-                    "
-                    alt="Skype Credit"
-                  ></div>
-                  <div class="card-body">
-                    <h5 class="card-title" title="Skype Credit">
-                      Skype Credit
-                    </h5>
-                    <p class="card-text"></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardSize">
-              <div class="card">
-                <a href="/product-details/eBay-Gift-Card" title="">
-                  <div
-                    class="card-img-top"
-                    style="
-                      height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220620055404.jpg');
-                      background-size: cover;
-                      background-position: center center;
-                    "
-                    alt="eBay Gift Card"
-                  ></div>
-                  <div class="card-body">
-                    <h5 class="card-title" title="eBay Gift Card">
-                      eBay Gift Card
-                    </h5>
-                    <p class="card-text"></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardSize">
-              <div class="card">
-                <a
-                  href="/product-details/iTunes-Gift-Card-US-Region"
-                  title=""
-                >
-                  <div
-                    class="card-img-top"
-                    style="
-                      height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220620001149.jpg');
-                      background-size: cover;
-                      background-position: center center;
-                    "
-                    alt="iTunes Gift Card (US Region)"
-                  ></div>
-                  <div class="card-body">
-                    <h5 class="card-title" title="iTunes Gift Card (US Region)">
-                      iTunes Gift Card (US Region)
-                    </h5>
-                    <p class="card-text"></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardSize">
-              <div class="card">
-                <a href="/product-details/H-M" title="">
-                  <div
-                    class="card-img-top"
-                    style="
-                      height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220619224758.jpg');
-                      background-size: cover;
-                      background-position: center center;
-                    "
-                    alt="H&amp;M"
-                  ></div>
-                  <div class="card-body">
-                    <h5 class="card-title" title="H&amp;M">H&amp;M</h5>
-                    <p class="card-text"></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardSize">
-              <div class="card">
-                <a href="/product-details/OYO-Rooms" title="">
-                  <div
-                    class="card-img-top"
-                    style="
-                      height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220619223834.jpg');
-                      background-size: cover;
-                      background-position: center center;
-                    "
-                    alt="OYO Rooms"
-                  ></div>
-                  <div class="card-body">
-                    <h5 class="card-title" title="OYO Rooms">OYO Rooms</h5>
-                    <p class="card-text"></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardSize">
-              <div class="card">
-                <a href="/product-details/Saint-Cinnamon" title="">
-                  <div
-                    class="card-img-top"
-                    style="
-                      height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220619223008.jpg');
-                      background-size: cover;
-                      background-position: center center;
-                    "
-                    alt="Saint Cinnamon"
-                  ></div>
-                  <div class="card-body">
-                    <h5 class="card-title" title="Saint Cinnamon">
-                      Saint Cinnamon
-                    </h5>
-                    <p class="card-text"></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="cardSize">
-              <div class="card">
                 <a href="/product-details/OrangeGame" title="">
                   <div
                     class="card-img-top"
                     style="
                       height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220619004243.jpg');
+                      background: url('https://vogame.id/cdn/kategori/cat_20220619004243.jpg');
                       background-size: cover;
                       background-position: center center;
                     "
@@ -287,15 +72,12 @@
 
             <div class="cardSize">
               <div class="card">
-                <a
-                  href="/product-details/Nintendo-US-Region-"
-                  title=""
-                >
+                <a href="/product-details/Nintendo-US-Region-" title="">
                   <div
                     class="card-img-top"
                     style="
                       height: 139px;
-                      background: url('https://vogame.co.id/cdn/kategori/cat_20220619003223.jpg');
+                      background: url('https://vogame.id/cdn/kategori/cat_20220619003223.jpg');
                       background-size: cover;
                       background-position: center center;
                     "
@@ -304,6 +86,205 @@
                   <div class="card-body">
                     <h5 class="card-title" title="Nintendo (US Region)">
                       Nintendo (US Region)
+                    </h5>
+                    <p class="card-text"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cardSize">
+              <div class="card">
+                <a href="/product-details/Mojang-Minecraft" title="">
+                  <div
+                    class="card-img-top"
+                    style="
+                      height: 139px;
+                      background: url('https://vogame.id/cdn/kategori/cat_20220619001318.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                    "
+                    alt="Mojang Minecraft"
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title" title="Mojang Minecraft">
+                      Mojang Minecraft
+                    </h5>
+                    <p class="card-text"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cardSize">
+              <div class="card">
+                <a href="/product-details/Marvel-Super-War" title="">
+                  <div
+                    class="card-img-top"
+                    style="
+                      height: 139px;
+                      background: url('https://vogame.id/cdn/kategori/cat_20220618220253.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                    "
+                    alt="Marvel Super War"
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title" title="Marvel Super War">
+                      Marvel Super War
+                    </h5>
+                    <p class="card-text"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cardSize">
+              <div class="card">
+                <a href="/product-details/Blizzard" title="">
+                  <div
+                    class="card-img-top"
+                    style="
+                      height: 139px;
+                      background: url('https://vogame.id/cdn/kategori/cat_20220617192340.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                    "
+                    alt="Blizzard"
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title" title="Blizzard">Blizzard</h5>
+                    <p class="card-text"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cardSize">
+              <div class="card">
+                <a href="/product-details/XBOX-US-REGION-" title="">
+                  <div
+                    class="card-img-top"
+                    style="
+                      height: 139px;
+                      background: url('https://vogame.id/cdn/kategori/cat_20220620000511.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                    "
+                    alt="XBOX (US REGION)"
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title" title="XBOX (US REGION)">
+                      XBOX (US REGION)
+                    </h5>
+                    <p class="card-text"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cardSize">
+              <div class="card">
+                <a href="/product-details/WAWA-GAMES" title="">
+                  <div
+                    class="card-img-top"
+                    style="
+                      height: 139px;
+                      background: url('https://vogame.id/cdn/kategori/cat_20220617162508.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                    "
+                    alt="WAWA GAMES"
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title" title="WAWA GAMES">WAWA GAMES</h5>
+                    <p class="card-text"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cardSize">
+              <div class="card">
+                <a href="/product-details/-SPEED-DRIFTERS" title="">
+                  <div
+                    class="card-img-top"
+                    style="
+                      height: 139px;
+                      background: url('https://vogame.id/cdn/kategori/cat_20220921174424.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                    "
+                    alt=" SPEED DRIFTERS"
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title" title=" SPEED DRIFTERS">
+                      SPEED DRIFTERS
+                    </h5>
+                    <p class="card-text"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cardSize">
+              <div class="card">
+                <a href="/product-details/SKYEGRID" title="">
+                  <div
+                    class="card-img-top"
+                    style="
+                      height: 139px;
+                      background: url('https://vogame.id/cdn/kategori/cat_20220619011309.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                    "
+                    alt="SKYEGRID"
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title" title="SKYEGRID">SKYEGRID</h5>
+                    <p class="card-text"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cardSize">
+              <div class="card">
+                <a href="/product-details/Razer-Pin" title="">
+                  <div
+                    class="card-img-top"
+                    style="
+                      height: 139px;
+                      background: url('https://vogame.id/cdn/kategori/cat_20220619010958.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                    "
+                    alt="Razer Pin"
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title" title="Razer Pin">Razer Pin</h5>
+                    <p class="card-text"></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="cardSize">
+              <div class="card">
+                <a href="/product-details/PUBG-FOR-PC-STEAM-" title="">
+                  <div
+                    class="card-img-top"
+                    style="
+                      height: 139px;
+                      background: url('https://vogame.id/cdn/kategori/cat_20220617153322.jpg');
+                      background-size: cover;
+                      background-position: center center;
+                    "
+                    alt="PUBG FOR PC (STEAM)"
+                  ></div>
+                  <div class="card-body">
+                    <h5 class="card-title" title="PUBG FOR PC (STEAM)">
+                      PUBG FOR PC (STEAM)
                     </h5>
                     <p class="card-text"></p>
                   </div>
