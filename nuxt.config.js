@@ -35,11 +35,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-<<<<<<< HEAD
-    '@/assets/css/vogame.scss',
-=======
     '@/assets/css/'+process.env.APP_NAME+'.scss',
->>>>>>> 5978bdae518cce869a276701deed4959f4f7b658
     '@/assets/css/main.scss',
   ],
 
