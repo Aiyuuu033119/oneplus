@@ -60,7 +60,7 @@ export default {
   ],
 
   axios: {
-    baseURL: process.env.API_URL || 'https://svapi.isivoucher.game/'
+    baseURL: process.env.API_URL || 'http://gamespediaapi.cobaaja.xyz/'
   },
 
   auth: {
