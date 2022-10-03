@@ -42,7 +42,7 @@
             </a>
           </div>
           <div class="col-2 col-lg-4 text-right">
-            <nuxt-link to="/" class="btn btn-secondary registe 2020 - 2022 {{ appName }}. All Rights ReservedrBtn">
+            <nuxt-link to="/" class="btn btn-warning registerBtn">
               Masuk / Daftar</nuxt-link
             >
             <div
