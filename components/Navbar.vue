@@ -42,7 +42,7 @@
             </a>
           </div>
           <div class="col-2 col-lg-4 text-right">
-            <nuxt-link to="/" class="btn btn-warning registerBtn">
+            <nuxt-link to="/login" class="btn btn-warning registerBtn">
               Masuk / Daftar</nuxt-link
             >
             <div
