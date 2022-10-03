@@ -441,6 +441,13 @@ export default {
       return this._routerRoot._route.params.name.replace(/-/g,' ');
     },
   },
-
+  async fetch() {
+    this.popular = await fetch(
+      process.env.apiUrl + "/mobileapi/kategorisingle/"
+    ).then((res) => res.json());
+    this.new_product = await fetch(
+      process.env.apiUrl + "/mobileapi/kategori"
+    )
+  },
 };
 </script>

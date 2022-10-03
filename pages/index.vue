@@ -5,9 +5,9 @@
         <div class="col-12 p-0" :class="slider.length != 0 ? 'true' : 'false'" v-if="slider.length != 0">
           <Carousel v-if="slider.length != 0" v-bind="bannerSlider" class="featuredBanner slick-dotted" :class="slider.length === 0 ? 'd-none' : ''">
             <!-- <div class="p-2" v-for="item in slider" :key="item.id"> -->
-              <nuxt-link v-for="item in slider" :key="item.id" :to="item.url">
+              <nuxt-link v-for="(item, key) in slider" :key="item.id" :to="item.url">
                 <!-- <div class="ratio ratio-16x9"> -->
-                  <img :src="item.src" class="rounded">
+                  <img :src="'/img/slider/slider-'+(key+1).toString()+'.png'" class="rounded">
                 <!-- </div> -->
               </nuxt-link>
             <!-- </div> -->
