@@ -6,7 +6,12 @@
           <div class="col-8 col-lg-2 text-left">
             <nuxt-link to="/"
               >
-              <h4 class="text-white text-uppercase font-weight-bold m-0">{{ appName }}</h4>
+              <img
+              src="../assets/img/logo.png"
+              title="vogame"
+              width="120"
+              />
+              <!-- <h4 class="text-white text-uppercase font-weight-bold m-0">{{ appName }}</h4> -->
               <!-- <img :src="logo" width="150" alt="NusaPin - Voucher Game Online"
             /> -->
             </nuxt-link>

@@ -5,12 +5,12 @@
         <div class="col-12 col-lg-6">
           <nuxt-link to="/"
             >
-            <h4 class="text-black text-uppercase font-weight-bold m-0">{{ appName }}</h4>
-            <!-- <img
-              src="https://vogame.co.id/assets/img/logo/logo2.png"
-              width="125"
+            <img
+              src="../assets/img/logoFooter.png"
+              title="vogame"
+              width="120"
               class="mb-3"
-          /> -->
+              />
           </nuxt-link>
         </div>
       </div>
