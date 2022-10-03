@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 $theme-colors: (
     "light":      #f8e00b,
     "dark":       #120757,
@@ -12,8 +13,14 @@ $theme-colors: (
     "warning":    #ffca7d,
     "danger":     #ff0865,
 );
-
+$font-family-base : 'Arimo';
 $link-color:                 #120757;
 $link-hover-color:           #4f3516;
 
 @import "~bootstrap/scss/bootstrap";
+body {
+    font-family: 'Arimo', sans-serif;
+}
+p {
+    font-family: 'Arimo', sans-serif;
+}

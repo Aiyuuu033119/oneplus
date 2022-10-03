@@ -219,7 +219,7 @@
               <ul class="nav justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item">
                   <a
-                    class="btn btn-light active"
+                    class="btn btn-light"
                     id="one-tab"
                     data-toggle="tab"
                     href="#one"
@@ -231,7 +231,7 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="btn btn-light"
+                    class="btn"
                     id="two-tab"
                     data-toggle="tab"
                     href="#two"
@@ -270,7 +270,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="text-white" title="Free Fire">
+                            <h5 class="card-title text-primary" title="Free Fire">
                               Call of Duty Mobile
                             </h5>
                           </div>
@@ -296,7 +296,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="text-white" title="Free Fire">
+                            <h5 class="card-title text-primary" title="Free Fire">
                               Mobile Legend
                             </h5>
                           </div>
@@ -331,7 +331,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="text-white" title="Free Fire">
+                            <h5 class="card-title text-primary" title="Free Fire">
                               Mobile Legend
                             </h5>
                           </div>
@@ -357,7 +357,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="text-white" title="Free Fire">GoRide</h5>
+                            <h5 class="card-title text-primary" title="Free Fire">GoRide</h5>
                           </div>
                         </div>
                         <div class="textWrap">
@@ -381,7 +381,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="text-white" title="Free Fire">GoCar</h5>
+                            <h5 class="card-title text-primary" title="Free Fire">GoCar</h5>
                           </div>
                         </div>
                         <div class="textWrap">
@@ -408,7 +408,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="text-white" title="Free Fire">
+                            <h5 class="card-title text-primary" title="Free Fire">
                               Diva Karaoke Express
                             </h5>
                           </div>
@@ -434,7 +434,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="text-white" title="Free Fire">
+                            <h5 class="card-title text-primary" title="Free Fire">
                               Skype Credit
                             </h5>
                           </div>
@@ -463,7 +463,7 @@
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="text-white" title="Free Fire">
+                            <h5 class="card-title text-primary" title="Free Fire">
                               eBay Gift Card
                             </h5>
                           </div>
@@ -516,7 +516,7 @@
                       alt="Arena of Valor"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Arena of Valor">
+                      <h5 class="card-title text-primary" title="Arena of Valor">
                         Arena of Valor
                       </h5>
                       <p class="card-text"></p>
@@ -541,7 +541,7 @@
                       alt="Point Blank DIRECT"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Point Blank DIRECT">
+                      <h5 class="card-title text-primary" title="Point Blank DIRECT">
                         Point Blank DIRECT
                       </h5>
                       <p class="card-text"></p>
@@ -566,7 +566,7 @@
                       alt="Battlenet Card"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Battlenet Card">
+                      <h5 class="card-title text-primary" title="Battlenet Card">
                         Battlenet Card
                       </h5>
                       <p class="card-text"></p>
@@ -591,7 +591,7 @@
                       alt="Grab Voucher"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Grab Voucher">
+                      <h5 class="card-title text-primary" title="Grab Voucher">
                         Grab Voucher
                       </h5>
                       <p class="card-text"></p>
@@ -616,7 +616,7 @@
                       alt="Dairy Queen"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Dairy Queen">
+                      <h5 class="card-title text-primary" title="Dairy Queen">
                         Dairy Queen
                       </h5>
                       <p class="card-text"></p>
@@ -641,7 +641,7 @@
                       alt="Bakmi Gm "
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Bakmi Gm ">Bakmi Gm</h5>
+                      <h5 class="card-title text-primary" title="Bakmi Gm ">Bakmi Gm</h5>
                       <p class="card-text"></p>
                     </div>
                   </a>
@@ -661,7 +661,7 @@
                       alt="Excelso"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Excelso">Excelso</h5>
+                      <h5 class="card-title text-primary" title="Excelso">Excelso</h5>
                       <p class="card-text"></p>
                     </div>
                   </a>
@@ -684,7 +684,7 @@
                       alt="GREYHOUND CAFE"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="GREYHOUND CAFE">
+                      <h5 class="card-title text-primary" title="GREYHOUND CAFE">
                         GREYHOUND CAFE
                       </h5>
                       <p class="card-text"></p>
@@ -709,7 +709,7 @@
                       alt="Haagen Dazs"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Haagen Dazs">
+                      <h5 class="card-title text-primary" title="Haagen Dazs">
                         Haagen Dazs
                       </h5>
                       <p class="card-text"></p>
@@ -734,7 +734,7 @@
                       alt="Hong Kong Cafe"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Hong Kong Cafe">
+                      <h5 class="card-title text-primary" title="Hong Kong Cafe">
                         Hong Kong Cafe
                       </h5>
                       <p class="card-text"></p>
@@ -759,7 +759,7 @@
                       alt="Kafe Betawi"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Kafe Betawi">
+                      <h5 class="card-title text-primary" title="Kafe Betawi">
                         Kafe Betawi
                       </h5>
                       <p class="card-text"></p>
@@ -784,7 +784,7 @@
                       alt="Kantin Kendal"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Kantin Kendal">
+                      <h5 class="card-title text-primary" title="Kantin Kendal">
                         Kantin Kendal
                       </h5>
                       <p class="card-text"></p>
@@ -809,7 +809,7 @@
                       alt="Call of Duty Mobile"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Call of Duty Mobile">
+                      <h5 class="card-title text-primary" title="Call of Duty Mobile">
                         Call of Duty Mobile
                       </h5>
                       <p class="card-text"></p>
@@ -834,7 +834,7 @@
                       alt="Kimukatsu"
                     ></div>
                     <div class="card-body">
-                      <h5 class="text-white" title="Kimukatsu">Kimukatsu</h5>
+                      <h5 class="card-title text-primary" title="Kimukatsu">Kimukatsu</h5>
                       <p class="card-text"></p>
                     </div>
                   </a>

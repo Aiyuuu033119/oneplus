@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap');
+
 $theme-colors: (
     "light":      #0f346d,
     "dark":       #afbdc7,
@@ -12,7 +14,16 @@ $theme-colors: (
     "danger":     #f0261f,
 );
 
+$font-family-base : 'Gemunu Libre';
 $link-color:                 #afbdc7;
 $link-hover-color:           #16233b;
 
+
 @import "~bootstrap/scss/bootstrap";
+
+body {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+p {
+    font-family: 'Gemunu Libre', sans-serif;
+}

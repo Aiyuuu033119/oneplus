@@ -61,7 +61,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6 mb-3">
-          © 2020 - 2022 VOGAME. All Rights Reserved
+          © 2020 - 2022 {{ appName }}. All Rights Reserved
         </div>
         <div class="col-12 col-lg-6 mb-3">
           <a href="#top" class="copyright link-color link-hover-color"
