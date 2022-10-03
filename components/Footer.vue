@@ -32,27 +32,21 @@
             </li>
           </ul>
           <div class="socialmedia">
-            <a
-              href="https://www.facebook.com/join.vogame/"
-              title=""
-              class="bg-facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="mailto:cs@vogame.id" title="" class="bg-youtube"
-              ><i class="fas fa-envelope"></i
-            ></a>
-            <a
-              href="https://twitter.com/OfficialVogame"
-              title=""
-              class="bg-twitter"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/vogame.id/"
-              title=""
-              class="bg-instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
+              <a
+                v-for="(item, i) in social"
+                :key="i"
+                :href="item.nama == 'email' ? 'mailto:'+item.url : item.url"
+                title=""
+                :class="item.nama == 'email' ? 'bg-youtube' : 'bg-'+item.nama"
+                target="_blank"
+                ><i class="fab"
+                  :class="item.nama == 'facebook' ? 'fab fa-facebook-f' :
+                  item.nama == 'email' ? 'fas fa-envelope' :
+                  item.nama == 'twitter' ? 'fab fa-twitter' :
+                  'fab fa-instagram'
+                  "
+                ></i
+              ></a>
           </div>
         </div>
       </div>
@@ -84,13 +78,13 @@ export default {
 
   data() {
     return {
-      social: null,
+      social: [],
       appName: process.env.appName
     };
   },
   created() {
     this.$axios.get("/mobileapi/sosialmedia").then((result) => {
-      this.social = result;
+      this.social = result.data;
     });
   },
 };
@@ -106,21 +100,5 @@ export default {
   color: white;
   height: 42px;
   width: 42px;
-}
-
-.social.facebook {
-  background: #2c4cd5;
-}
-.social.email {
-  background: #db4437;
-}
-.social.twitter {
-  background: #1dcaff;
-}
-.social.instagram {
-  background: #dd2a7b;
-}
-.social:hover {
-  background: #ff5a5e;
 }
 </style>
