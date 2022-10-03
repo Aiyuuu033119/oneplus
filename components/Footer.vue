@@ -78,7 +78,7 @@ export default {
 
   data() {
     return {
-      social: null,
+      social: [],
       appName: process.env.appName
     };
   },
