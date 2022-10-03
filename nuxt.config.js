@@ -123,6 +123,18 @@ export default {
         components: {
           default: resolve(__dirname, 'pages/product-details.vue'), // or routes[index].component
         }
+      }),
+      routes.push({
+        path: '/login',
+        components: {
+          default: resolve(__dirname, 'components/Login.vue'), // or routes[index].component
+        }
+      }),
+      routes.push({
+        path: '/register',
+        components: {
+          default: resolve(__dirname, 'components/Register.vue'), // or routes[index].component
+        }
       })
     }
   }
