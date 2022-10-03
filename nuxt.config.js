@@ -111,9 +111,33 @@ export default {
         }
       }),
       routes.push({
+        path: '/top-up',
+        components: {
+          default: resolve(__dirname, 'pages/topup.vue'), // or routes[index].component
+        }
+      }),
+      routes.push({
+        path: '/voucher',
+        components: {
+          default: resolve(__dirname, 'pages/voucher.vue'), // or routes[index].component
+        }
+      }),
+      routes.push({
+        path: '/game',
+        components: {
+          default: resolve(__dirname, 'pages/game.vue'), // or routes[index].component
+        }
+      }),
+      routes.push({
         path: '/contact-us',
         components: {
           default: resolve(__dirname, 'pages/contact-us.vue'), // or routes[index].component
+        }
+      }),
+      routes.push({
+        path: '/product-details/:name',
+        components: {
+          default: resolve(__dirname, 'pages/product-details.vue'), // or routes[index].component
         }
       })
     }
