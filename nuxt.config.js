@@ -4,7 +4,8 @@ export default {
 
   env: {
     baseUrl: process.env.BASE_URL || 'http://127.0.0.1:3000',
-    apiUrl: process.env.API_URL || 'http://127.0.0.1'
+    apiUrl: process.env.API_URL,
+    appName: process.env.APP_NAME
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -24,17 +25,17 @@ export default {
       { rel: 'stylesheet', href: '/css/bootstrap.min.css' }
     ],
     script: [
-      { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/jquery-3.5.1.min.js' },
-      // { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/bootstrap.bundle.min.js' },
-      { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/slick.min.js' },
-      { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/main.js' },
-      { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/fontawesome.js' }
+      { src: '/js/jquery-3.5.1.min.js' },
+      { src: '/js/bootstrap.bundle.min.js' },
+      { src: '/js/slick.min.js' },
+      { src: '/js/main.js' },
+      { src: '/js/fontawesome.js' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/css/gamespedia.scss',
+    '@/assets/css/'+process.env.APP_NAME+'.scss',
     '@/assets/css/main.scss',
   ],
 
@@ -59,7 +60,7 @@ export default {
   ],
 
   axios: {
-    baseURL: process.env.API_URL || 'https://svapi.isivoucher.game/'
+    baseURL: process.env.API_URL
   },
 
   auth: {
@@ -121,6 +122,18 @@ export default {
         path: '/product-details/:name',
         components: {
           default: resolve(__dirname, 'pages/product-details.vue'), // or routes[index].component
+        }
+      }),
+      routes.push({
+        path: '/login',
+        components: {
+          default: resolve(__dirname, 'components/Login.vue'), // or routes[index].component
+        }
+      }),
+      routes.push({
+        path: '/register',
+        components: {
+          default: resolve(__dirname, 'components/Register.vue'), // or routes[index].component
         }
       })
     }

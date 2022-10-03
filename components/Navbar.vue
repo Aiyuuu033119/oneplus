@@ -5,8 +5,11 @@
         <div class="w-100 d-flex align-items-center">
           <div class="col-8 col-lg-2 text-left">
             <nuxt-link to="/"
-              ><img :src="logo" width="150" alt="NusaPin - Voucher Game Online"
-            /></nuxt-link>
+              >
+              <h4 class="text-white text-uppercase font-weight-bold m-0">{{ appName }}</h4>
+              <!-- <img :src="logo" width="150" alt="NusaPin - Voucher Game Online"
+            /> -->
+            </nuxt-link>
           </div>
           <div class="col-2 col-lg-6 d-none d-lg-block">
             <form action="https://vogame.co.id/shop" method="GET">
@@ -39,7 +42,7 @@
             </a>
           </div>
           <div class="col-2 col-lg-4 text-right">
-            <nuxt-link to="/" class="btn btn-warning registerBtn">
+            <nuxt-link to="/login" class="btn btn-warning registerBtn">
               Masuk / Daftar</nuxt-link
             >
             <div
@@ -103,6 +106,7 @@ export default {
       alamat: "",
       notelp: "",
       whatsapp: "",
+      appName: process.env.appName
     };
   },
 

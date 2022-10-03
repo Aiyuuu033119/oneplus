@@ -4,11 +4,14 @@
       <div class="row">
         <div class="col-12 col-lg-6">
           <nuxt-link to="/"
-            ><img
+            >
+            <h4 class="text-black text-uppercase font-weight-bold m-0">{{ appName }}</h4>
+            <!-- <img
               src="https://vogame.co.id/assets/img/logo/logo2.png"
               width="125"
               class="mb-3"
-          /></nuxt-link>
+          /> -->
+          </nuxt-link>
         </div>
       </div>
       <div class="row">
@@ -58,7 +61,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6 mb-3">
-          © 2020 - 2022 VOGAME. All Rights Reserved
+          © 2020 - 2022 {{ appName }}. All Rights Reserved
         </div>
         <div class="col-12 col-lg-6 mb-3">
           <a href="#top" class="copyright link-color link-hover-color"
@@ -81,21 +84,13 @@ export default {
 
   data() {
     return {
-      title: "Isigame",
-      logo: "img/logo.svg",
-      alamat: "",
-      notelp: "",
-      whatsapp: "",
+      social: null,
+      appName: process.env.appName
     };
   },
   created() {
-    var vuedis = this;
-    this.$axios.get("/mobileapi/s7xs6oast").then((result) => {
-      vuedis.title = result.data.nama;
-      vuedis.logo = result.data.logo;
-      vuedis.notelp = result.data.telp;
-      vuedis.alamat = result.data.alamat;
-      vuedis.whatsapp = result.data.wa;
+    this.$axios.get("/mobileapi/sosialmedia").then((result) => {
+      this.social = result;
     });
   },
 };
