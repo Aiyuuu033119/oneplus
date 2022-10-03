@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,100;1,200;1,400;1,500&display=swap');
+
 $theme-colors: (
     "light":      #c3c4c8,
     "dark":       #0e0a27,
@@ -12,7 +14,17 @@ $theme-colors: (
     "danger":     #ef1618
 );
 
+$font-family-base : 'Poppins';
 $link-color:                 #0e0a27;
 $link-hover-color:           #1e405b;
 
+
 @import "~bootstrap/scss/bootstrap";
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+p {
+    font-family: 'Poppins', sans-serif;
+}
