@@ -1,0 +1,14 @@
+$theme-colors: (
+    "light":      #cdd6e8,
+    "dark":       #0f497a,
+    "primary":    #4d5db7,
+    "secondary":  #5391fa,
+    "info":       #bae5f6,
+    "accent1":    #128abc,
+    "accent2":    #6e6ba2,
+    "accent3":    #bff7aa,
+    "success":    #0bc171,
+    "warning":    #ead308,
+    "danger":     #fe1e03,
+);
+@import "~bootstrap/scss/bootstrap";

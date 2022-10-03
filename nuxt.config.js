@@ -25,7 +25,7 @@ export default {
     ],
     script: [
       { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/jquery-3.5.1.min.js' },
-      { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/bootstrap.bundle.min.js' },
+      // { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/bootstrap.bundle.min.js' },
       { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/slick.min.js' },
       { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/main.js' },
       { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/fontawesome.js' }
@@ -34,6 +34,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/duniasegame.scss',
     '@/assets/css/main.scss',
   ],
 
