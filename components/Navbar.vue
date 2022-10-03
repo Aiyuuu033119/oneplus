@@ -1,6 +1,6 @@
 <template>
   <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="bg-primary navbar navbar-expand-lg navbar-light">
       <div class="container">
         <div class="w-100 d-flex align-items-center">
           <div class="col-8 col-lg-2 text-left">

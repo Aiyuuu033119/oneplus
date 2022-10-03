@@ -17,9 +17,9 @@
         style="position: relative; top: 0; left: 0"
         dir="ltr"
       >
-        <div @click="$emit('toggle-sidebar')" id="dismiss">
+        <a @click="$emit('toggle-sidebar')" id="dismiss" class="link-color link-hover-color">
           <i class="fas fa-times"></i>
-        </div>
+        </a>
 
         <div class="sidebar-header">
           <div @click="$emit('toggle-sidebar')">
@@ -28,15 +28,15 @@
             >
           </div>
         </div>
-        <ul class="list-unstyled components">
+        <ul class="list-unstyled components text-dark">
           <li @click="$emit('toggle-sidebar')">
-            <nuxt-link to="/"
+            <nuxt-link to="/" class="link-color link-hover-color"
               ><i class="fas fa-home mr-3"></i>
               Home</nuxt-link
             >
           </li>
           <li @click="$emit('toggle-sidebar')">
-            <nuxt-link to="/shop"
+            <nuxt-link to="/store" class="link-color link-hover-color"
               ><i class="fas fa-shopping-cart mr-3"></i>
               Pembelian</nuxt-link
             >

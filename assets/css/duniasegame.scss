@@ -9,9 +9,10 @@ $theme-colors: (
     "accent3":    #a39ca9,
     "success":    #289d5c,
     "warning":    #e2c92a,
-    "danger":     #ef1618,
+    "danger":     #ef1618
 );
 
-
+$link-color:                 #0e0a27;
+$link-hover-color:           #1e405b;
 
 @import "~bootstrap/scss/bootstrap";
