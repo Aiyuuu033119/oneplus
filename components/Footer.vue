@@ -93,13 +93,8 @@ export default {
     };
   },
   created() {
-    var vuedis = this;
-    this.$axios.get("/mobileapi/s7xs6oast").then((result) => {
-      vuedis.title = result.data.nama;
-      vuedis.logo = result.data.logo;
-      vuedis.notelp = result.data.telp;
-      vuedis.alamat = result.data.alamat;
-      vuedis.whatsapp = result.data.wa;
+    this.$axios.get("/mobileapi/sosialmedia").then((result) => {
+      console.log(result);
     });
   },
 };

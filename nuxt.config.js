@@ -4,8 +4,8 @@ export default {
 
   env: {
     baseUrl: process.env.BASE_URL || 'http://127.0.0.1:3000',
-    apiUrl: process.env.API_URL || 'http://127.0.0.1',
-    appName: process.env.APP_NAME || 'duniasegame'
+    apiUrl: process.env.API_URL,
+    appName: process.env.APP_NAME
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -35,7 +35,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/css/duniasegame.scss',
+    '@/assets/css/'+process.env.APP_NAME+'.scss',
     '@/assets/css/main.scss',
   ],
 
@@ -60,7 +60,7 @@ export default {
   ],
 
   axios: {
-    baseURL: process.env.API_URL || 'http://gamespediaapi.cobaaja.xyz/'
+    baseURL: process.env.API_URL
   },
 
   auth: {
