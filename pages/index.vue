@@ -919,13 +919,14 @@
                   </div>
                   <a class="newsThumb" href="https://vogame.id/blog/Ini-Dia-Hero-Mage-Terbaik-Yang-Bisa-Kamu-Gunakan-Di-Akhir-Season-20-MLBB-" title="">
                     <img
+                      style="height: 180px;"
                       class="card-img-top"
                       src="https://vogame.id/cdn/uploads/blogpost_120210603110507.jpg"
                       alt="Ini Dia Hero Mage Terbaik Yang Bisa Kamu Gunakan Di Akhir Season 20 MLBB !"
                   /></a>
                   <div class="card-body">
                     <h5
-                      class="text-white"
+                      class="text-primary"
                       title="Ini Dia Hero Mage Terbaik Yang Bisa Kamu Gunakan Di Akhir Season 20 MLBB !"
                     >
                       <a href="#" title=""
@@ -962,13 +963,14 @@
                     href="https://vogame.id/blog/Kamu-Di-Tier-Warrior-Ingin-Naik-Ke-Epic-Pakai-Hero-Hero-Ini-"
                     title=""
                     ><img
+                      style="height: 180px;"
                       class="card-img-top"
                       src="https://vogame.id/cdn/uploads/blogpost_120210602170823.jpg"
                       alt="Kamu Di Tier Warrior Ingin Naik Ke Epic ? Pakai Hero-Hero Ini !"
                   /></a>
                   <div class="card-body">
                     <h5
-                      class="text-white"
+                      class="text-primary"
                       title="Kamu Di Tier Warrior Ingin Naik Ke Epic ? Pakai Hero-Hero Ini !"
                     >
                       <a href="#" title=""
