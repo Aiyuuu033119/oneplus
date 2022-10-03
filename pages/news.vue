@@ -34,15 +34,15 @@
             <nav aria-label="..." class="d-none">
               <ul class="pagination m-0 justify-content-center">
                 <li class="page-item disabled">
-                  <span class="page-link">Kembali</span>
+                  <span class="page-link text-primary">Kembali</span>
                 </li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item active" aria-current="page">
-                  <span class="page-link">2</span>
+                  <span class="page-link text-primary">2</span>
                 </li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="#">Selanjutnya</a>
+                  <a class="page-link text-primary" href="#">Selanjutnya</a>
                 </li>
               </ul>
             </nav>
