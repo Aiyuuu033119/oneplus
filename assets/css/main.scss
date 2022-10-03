@@ -348,7 +348,6 @@ ul ul a {
 }
 
 .bgHome {
-    background: #fafafa url(../img/gamespedia.svg) no-repeat top center;
     background-position-y: 68px;
     width: 100%;
     padding: 0;
@@ -358,6 +357,10 @@ ul ul a {
     top: 0;
     right: 0;
 }
+.bgHome.vogame {
+    background: #fafafa url(../img/vogame.svg) no-repeat top center;
+}
+
 
 .home-title{
     text-align: left;

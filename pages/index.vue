@@ -2,8 +2,8 @@
   <main>
     <section class="container-fluid">
       <div class="row">
-        <div class="col-12 p-0">
-          <Carousel v-bind="bannerSlider" class="featuredBanner slick-dotted">
+        <div class="col-12 p-0" :class="slider.length != 0 ? 'true' : 'false'" v-if="slider.length != 0">
+          <Carousel v-if="slider.length != 0" v-bind="bannerSlider" class="featuredBanner slick-dotted" :class="slider.length === 0 ? 'd-none' : ''">
             <!-- <div class="p-2" v-for="item in slider" :key="item.id"> -->
               <nuxt-link v-for="item in slider" :key="item.id" :to="item.url">
                 <!-- <div class="ratio ratio-16x9"> -->
@@ -219,10 +219,11 @@
               <ul class="nav justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item">
                   <a
-                    class="btn btn-light"
+                    @click="setActiveProductFavorite(1)"
+                    class="btn"
+                    :class="active_product_favorite === 1 ? 'btn-light' : ''"
                     id="one-tab"
                     data-toggle="tab"
-                    href="#one"
                     role="tab"
                     aria-controls="one"
                     aria-selected="true"
@@ -231,10 +232,11 @@
                 </li>
                 <li class="nav-item">
                   <a
+                    @click="setActiveProductFavorite(2)"
                     class="btn"
+                    :class="active_product_favorite === 2 ? 'btn-light' : ''"
                     id="two-tab"
                     data-toggle="tab"
-                    href="#two"
                     role="tab"
                     aria-controls="two"
                     aria-selected="false"
@@ -246,234 +248,77 @@
 
             <div class="tab-content" id="myTabContent">
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade"
+                :class="active_product_favorite === 1 ? 'show active' : ''"
                 id="one"
                 role="tabpanel"
                 aria-labelledby="one-tab"
               >
-                <div class="section-home-col three-col">
-                  <div class="cardSize">
+                <div class="section-home-col three-col" v-if="popular != null && popular.length > 0">
+                  <div class="cardSize" v-for="item in popular" :key="item.id">
                     <div class="card">
-                      <a
-                        href="https://vogame.id/produk/Call-of-Duty-Mobile"
-                        title=""
-                      >
+                      <nuxt-link :to="'/product-details/'+ item.url">
                         <div
                           class="imgWrap"
-                          style="
-                            background-image: url(https://vogame.id/assets/img/games/bggames.png);
-                          "
+                          :style="'background-image: url(' + 'https://vogame.id/assets/img/games/bggames.png' + ');'"
                         >
                           <img
                             class="card-img-top"
-                            src="https://vogame.id/cdn/kategori/cat_20220617110224.jpg"
+                            :src="'https://vogame.id/cdn/kategori/cat_20220617110224.jpg'"
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="card-title text-primary" title="Free Fire">
-                              Call of Duty Mobile
+                            <h5 class="card-title text-white" title="Free Fire">
+                              {{ item.nama }}
                             </h5>
                           </div>
                         </div>
                         <div class="textWrap">
-                          <p>Harga mulai dari Rp 22.201</p>
+                          <p>{{ item.publisher ? newp.publisher :  "Lorem Ipsum"}}</p>
                         </div>
-                      </a>
+                      </nuxt-link>
                     </div>
                   </div>
-                  <div class="cardSize">
-                    <div class="card">
-                      <a href="https://vogame.id/produk/Mobile-Legend" title="">
-                        <div
-                          class="imgWrap"
-                          style="
-                            background-image: url(https://vogame.id/assets/img/games/bggames.png);
-                          "
-                        >
-                          <img
-                            class="card-img-top"
-                            src="https://vogame.id/cdn/kategori/cat_20220801121105.jpg"
-                            alt="Games 1"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title text-primary" title="Free Fire">
-                              Mobile Legend
-                            </h5>
-                          </div>
-                        </div>
-                        <div class="textWrap">
-                          <p>Harga mulai dari Rp 3.150</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                </div>
+                <div class="section-home-col three-col" v-else>
+                  Produk tidak ada
                 </div>
               </div>
               <div
                 class="tab-pane fade"
+                :class="active_product_favorite === 2 ? 'show active' : ''"
                 id="two"
                 role="tabpanel"
                 aria-labelledby="two-tab"
               >
-                <div class="section-home-col three-col">
-                  <div class="cardSize">
+                <div class="section-home-col three-col" v-if="new_product != null && new_product.length > 0">
+                  <div class="cardSize" v-for="newp in new_product" :key="newp.id">
                     <div class="card">
-                      <a href="https://vogame.id/produk/Mobile-Legend" title="">
+                      <nuxt-link :to="'/product-details/'+newp.url">
                         <div
                           class="imgWrap"
-                          style="
-                            background-image: url(https://vogame.id/assets/img/games/bggames.png);
-                          "
+                          :style="'background-image: url(' + 'https://vogame.id/assets/img/games/bggames.png' + ');'"
                         >
                           <img
                             class="card-img-top"
-                            src="https://vogame.id/cdn/kategori/cat_20220801121105.jpg"
+                            :src="'https://vogame.id/cdn/kategori/cat_20220617110224.jpg'"
                             alt="Games 1"
                           />
                           <div class="card-body">
-                            <h5 class="card-title text-primary" title="Free Fire">
-                              Mobile Legend
+                            <h5 class="card-title text-white" title="Free Fire">
+                              {{ newp.nama }}
                             </h5>
                           </div>
                         </div>
                         <div class="textWrap">
-                          <p>Harga mulai dari Rp 3.150</p>
+                          <p>{{ newp.publisher ? newp.publisher :  "Lorem Ipsum"}}</p>
                         </div>
-                      </a>
+                      </nuxt-link>
                     </div>
                   </div>
-                  <div class="cardSize">
-                    <div class="card">
-                      <a href="https://vogame.id/produk/GoRide" title="">
-                        <div
-                          class="imgWrap"
-                          style="
-                            background-image: url(https://vogame.id/assets/img/games/bggames.png);
-                          "
-                        >
-                          <img
-                            class="card-img-top"
-                            src="https://vogame.id/cdn/kategori/cat_20220622153352.jpg"
-                            alt="Games 1"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title text-primary" title="Free Fire">GoRide</h5>
-                          </div>
-                        </div>
-                        <div class="textWrap">
-                          <p>Harga mulai dari Rp 10.000</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="cardSize">
-                    <div class="card">
-                      <a href="https://vogame.id/produk/GoCar" title="">
-                        <div
-                          class="imgWrap"
-                          style="
-                            background-image: url(https://vogame.id/assets/img/games/bggames.png);
-                          "
-                        >
-                          <img
-                            class="card-img-top"
-                            src="https://vogame.id/cdn/kategori/cat_20220622152228.jpg"
-                            alt="Games 1"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title text-primary" title="Free Fire">GoCar</h5>
-                          </div>
-                        </div>
-                        <div class="textWrap">
-                          <p>Harga mulai dari Rp 25.000</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="cardSize">
-                    <div class="card">
-                      <a
-                        href="https://vogame.id/produk/Diva-Karaoke-Express"
-                        title=""
-                      >
-                        <div
-                          class="imgWrap"
-                          style="
-                            background-image: url(https://vogame.id/assets/img/games/bggames.png);
-                          "
-                        >
-                          <img
-                            class="card-img-top"
-                            src="https://vogame.id/cdn/kategori/cat_20220622151232.jpg"
-                            alt="Games 1"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title text-primary" title="Free Fire">
-                              Diva Karaoke Express
-                            </h5>
-                          </div>
-                        </div>
-                        <div class="textWrap">
-                          <p>Harga mulai dari Rp 90.000</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="cardSize">
-                    <div class="card">
-                      <a href="https://vogame.id/produk/Skype-Credit" title="">
-                        <div
-                          class="imgWrap"
-                          style="
-                            background-image: url(https://vogame.id/assets/img/games/bggames.png);
-                          "
-                        >
-                          <img
-                            class="card-img-top"
-                            src="https://vogame.id/cdn/kategori/cat_20220622140900.jpg"
-                            alt="Games 1"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title text-primary" title="Free Fire">
-                              Skype Credit
-                            </h5>
-                          </div>
-                        </div>
-                        <div class="textWrap">
-                          <p>Harga mulai dari Rp 156.800</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="cardSize">
-                    <div class="card">
-                      <a
-                        href="https://vogame.id/produk/eBay-Gift-Card"
-                        title=""
-                      >
-                        <div
-                          class="imgWrap"
-                          style="
-                            background-image: url(https://vogame.id/assets/img/games/bggames.png);
-                          "
-                        >
-                          <img
-                            class="card-img-top"
-                            src="https://vogame.id/cdn/kategori/cat_20220620055404.jpg"
-                            alt="Games 1"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title text-primary" title="Free Fire">
-                              eBay Gift Card
-                            </h5>
-                          </div>
-                        </div>
-                        <div class="textWrap">
-                          <p>Harga mulai dari Rp 80.000</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                </div>
+                <div class="section-home-col three-col" v-else>
+                  Produk tidak ada
                 </div>
               </div>
             </div>
@@ -502,7 +347,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Arena-of-Valor"
+                    href="/product-details/Arena-of-Valor"
                     title="Arena of Valor"
                   >
                     <div
@@ -527,7 +372,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Point-Blank-DIRECT"
+                    href="/product-details/Point-Blank-DIRECT"
                     title="Point Blank DIRECT"
                   >
                     <div
@@ -552,7 +397,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Battlenet-Card"
+                    href="/product-details/Battlenet-Card"
                     title="Battlenet Card"
                   >
                     <div
@@ -577,7 +422,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Grab-Voucher"
+                    href="/product-details/Grab-Voucher"
                     title="Grab Voucher"
                   >
                     <div
@@ -602,7 +447,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Dairy-Queen"
+                    href="/product-details/Dairy-Queen"
                     title="Dairy Queen"
                   >
                     <div
@@ -627,7 +472,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Bakmi-Gm-"
+                    href="/product-details/Bakmi-Gm-"
                     title="Bakmi Gm "
                   >
                     <div
@@ -649,7 +494,7 @@
               </div>
               <div class="cardSize">
                 <div class="card">
-                  <a href="https://vogame.id/produk/Excelso" title="Excelso">
+                  <a href="/product-details/Excelso" title="Excelso">
                     <div
                       class="card-img-top"
                       style="
@@ -670,7 +515,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/GREYHOUND-CAFE"
+                    href="/product-details/GREYHOUND-CAFE"
                     title="GREYHOUND CAFE"
                   >
                     <div
@@ -695,7 +540,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Haagen-Dazs"
+                    href="/product-details/Haagen-Dazs"
                     title="Haagen Dazs"
                   >
                     <div
@@ -720,7 +565,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Hong-Kong-Cafe"
+                    href="/product-details/Hong-Kong-Cafe"
                     title="Hong Kong Cafe"
                   >
                     <div
@@ -745,7 +590,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Kafe-Betawi"
+                    href="/product-details/Kafe-Betawi"
                     title="Kafe Betawi"
                   >
                     <div
@@ -770,7 +615,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Kantin-Kendal"
+                    href="/product-details/Kantin-Kendal"
                     title="Kantin Kendal"
                   >
                     <div
@@ -795,7 +640,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Call-of-Duty-Mobile"
+                    href="/product-details/Call-of-Duty-Mobile"
                     title="Call of Duty Mobile"
                   >
                     <div
@@ -820,7 +665,7 @@
               <div class="cardSize">
                 <div class="card">
                   <a
-                    href="https://vogame.id/produk/Kimukatsu"
+                    href="/product-details/Kimukatsu"
                     title="Kimukatsu"
                   >
                     <div
@@ -1039,75 +884,81 @@ export default {
           },
         ],
       },
-      tabsSlider: {
-        slidesToShow: 5,
-        variableWidth: true,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 3,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              infinite: false,
-              centerMode: true,
-              variableWidth: true,
-              slidesToShow: 1,
-            },
-          },
-        ],
-      },
-      gameSlider: {
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 5,
-        speed: 500,
-        rows: 2,
-        slidesPerRow: 1,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 3,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: "unslick",
-          },
-        ],
-      },
+      // tabsSlider: {
+      //   slidesToShow: 5,
+      //   variableWidth: true,
+      //   responsive: [
+      //     {
+      //       breakpoint: 768,
+      //       settings: {
+      //         arrows: false,
+      //         centerMode: true,
+      //         centerPadding: "40px",
+      //         slidesToShow: 3,
+      //       },
+      //     },
+      //     {
+      //       breakpoint: 480,
+      //       settings: {
+      //         arrows: false,
+      //         infinite: false,
+      //         centerMode: true,
+      //         variableWidth: true,
+      //         slidesToShow: 1,
+      //       },
+      //     },
+      //   ],
+      // },
+      // gameSlider: {
+      //   infinite: true,
+      //   centerMode: true,
+      //   slidesToShow: 5,
+      //   speed: 500,
+      //   rows: 2,
+      //   slidesPerRow: 1,
+      //   responsive: [
+      //     {
+      //       breakpoint: 768,
+      //       settings: {
+      //         arrows: false,
+      //         centerMode: true,
+      //         centerPadding: "40px",
+      //         slidesToShow: 3,
+      //       },
+      //     },
+      //     {
+      //       breakpoint: 480,
+      //       settings: "unslick",
+      //     },
+      //   ],
+      // },
       slider: [
-        {
-          id: 1,
-          url: "",
-          src: "/img/slider/slider-1.png",
-        },
-        {
-          id: 2,
-          url: "",
-          src: "/img/slider/slider-2.jpg",
-        },
-        {
-          id: 3,
-          url: "",
-          src: "/img/slider/slider-3.jpg",
-        },
+        // {
+        //   id: 1,
+        //   url: "",
+        //   src: "/img/slider/slider-1.png",
+        // },
+        // {
+        //   id: 2,
+        //   url: "",
+        //   src: "/img/slider/slider-2.jpg",
+        // },
+        // {
+        //   id: 3,
+        //   url: "",
+        //   src: "/img/slider/slider-3.jpg",
+        // },
       ],
       new_product: null,
       popular: null,
       voucherz: null,
+      active_product_favorite: 1,
     };
+  },
+  methods: {
+    setActiveProductFavorite(index) {
+      this.active_product_favorite = index;
+    },
   },
   mounted() {
     console.log(this.new_product);

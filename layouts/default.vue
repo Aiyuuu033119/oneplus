@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper">
   <Sidebar :isOpenSidebar="isOpenSidebar" @toggle-sidebar="toggleSideBar"/>
-  <div :class="getRoute() === 'index' ? 'bgHome' : ''">
+  <div :class="getRoute() === 'index' ? 'bgHome ' + appName : ''">
     <Navbar @toggle-sidebar="toggleSideBar"/>
     <div>
       <Nuxt />
@@ -26,6 +26,7 @@ export default {
   data () {
     return {
       isOpenSidebar: false,
+      appName: process.env.appName
     }
   },
   methods: {
@@ -33,8 +34,9 @@ export default {
       this.isOpenSidebar = !this.isOpenSidebar;
     },
     getRoute() {
+      console.log(this);
       return this.$route.name
-    }
+    },
   },
 }
 </script>
