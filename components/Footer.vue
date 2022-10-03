@@ -84,17 +84,13 @@ export default {
 
   data() {
     return {
-      title: "Isigame",
-      logo: "img/logo.svg",
-      alamat: "",
-      notelp: "",
-      whatsapp: "",
+      social: null,
       appName: process.env.appName
     };
   },
   created() {
     this.$axios.get("/mobileapi/sosialmedia").then((result) => {
-      console.log(result);
+      this.social = result;
     });
   },
 };

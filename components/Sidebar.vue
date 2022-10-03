@@ -23,7 +23,7 @@
 
         <div class="sidebar-header">
           <div @click="$emit('toggle-sidebar')">
-            <nuxt-link to="/" class="btn btn-primary btn-block"
+            <nuxt-link to="/login" class="btn btn-primary btn-block"
               >Masuk / Daftar</nuxt-link
             >
           </div>

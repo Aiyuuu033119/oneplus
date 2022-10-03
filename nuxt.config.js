@@ -35,8 +35,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/css/main.scss',
     '@/assets/css/'+process.env.APP_NAME+'.scss',
+    '@/assets/css/main.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -122,6 +122,18 @@ export default {
         path: '/product-details/:name',
         components: {
           default: resolve(__dirname, 'pages/product-details.vue'), // or routes[index].component
+        }
+      }),
+      routes.push({
+        path: '/login',
+        components: {
+          default: resolve(__dirname, 'components/Login.vue'), // or routes[index].component
+        }
+      }),
+      routes.push({
+        path: '/register',
+        components: {
+          default: resolve(__dirname, 'components/Register.vue'), // or routes[index].component
         }
       })
     }
