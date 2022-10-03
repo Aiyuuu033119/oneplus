@@ -24,10 +24,11 @@ export default {
       { rel: 'stylesheet', href: '/css/bootstrap.min.css' }
     ],
     script: [
-      { src: process.env.BASE_URL+'/js/jquery-3.5.1.min.js' },
-      { src: process.env.BASE_URL+'/js/bootstrap.bundle.min.js' },
-      { src: process.env.BASE_URL+'/js/slick.min.js' },
-      { src: process.env.BASE_URL+'/js/main.js' }
+      { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/jquery-3.5.1.min.js' },
+      { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/bootstrap.bundle.min.js' },
+      { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/slick.min.js' },
+      { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/main.js' },
+      { src: process.env.BASE_URL || 'http://127.0.0.1:3000'+'/js/fontawesome.js' }
     ]
   },
 
@@ -101,6 +102,12 @@ export default {
         path: '/page/:slug',
         components: {
           default: resolve(__dirname, 'pages/static/_slug.vue'), // or routes[index].component
+        }
+      })
+      routes.push({
+        path: '/shop',
+        components: {
+          default: resolve(__dirname, 'pages/shop.vue'), // or routes[index].component
         }
       })
     }
