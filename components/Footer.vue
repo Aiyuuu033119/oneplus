@@ -4,11 +4,14 @@
       <div class="row">
         <div class="col-12 col-lg-6">
           <nuxt-link to="/"
-            ><img
+            >
+            <h4 class="text-black text-uppercase font-weight-bold m-0">{{ appName }}</h4>
+            <!-- <img
               src="https://vogame.co.id/assets/img/logo/logo2.png"
               width="125"
               class="mb-3"
-          /></nuxt-link>
+          /> -->
+          </nuxt-link>
         </div>
       </div>
       <div class="row">
@@ -86,6 +89,7 @@ export default {
       alamat: "",
       notelp: "",
       whatsapp: "",
+      appName: process.env.appName
     };
   },
   created() {
