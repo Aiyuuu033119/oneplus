@@ -109,6 +109,12 @@ export default {
         components: {
           default: resolve(__dirname, 'pages/shop.vue'), // or routes[index].component
         }
+      }),
+      routes.push({
+        path: '/contact-us',
+        components: {
+          default: resolve(__dirname, 'pages/contact-us.vue'), // or routes[index].component
+        }
       })
     }
   }

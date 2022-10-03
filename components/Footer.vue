@@ -25,7 +25,7 @@
               <nuxt-link to="/">Syarat &amp; Ketentuan</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/">Hubungi Kami</nuxt-link>
+              <nuxt-link to="/contact-us">Hubungi Kami</nuxt-link>
             </li>
           </ul>
           <div class="socialmedia">
