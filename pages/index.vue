@@ -491,7 +491,7 @@
               <h3 class="home-title">Semua Produk</h3>
               <div class="cta">
                 <a
-                  href="https://vogame.id/shop"
+                  href="/shop"
                   title=""
                   class="btn btn-primary"
                   >Lihat Lainnya</a

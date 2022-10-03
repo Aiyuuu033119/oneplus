@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper">
   <Sidebar :isOpenSidebar="isOpenSidebar" @toggle-sidebar="toggleSideBar"/>
-  <div :class="getRoute() === 'contact-us' ? '' : 'bgHome'">
+  <div :class="getRoute() === 'index' ? 'bgHome' : ''">
     <Navbar @toggle-sidebar="toggleSideBar"/>
     <div>
       <Nuxt />
@@ -24,7 +24,6 @@ export default {
     Sidebar
   },
   data () {
-    console.log(this.$route.name);
     return {
       isOpenSidebar: false,
     }
