@@ -1,7 +1,7 @@
 <template>
 <div class="wrapper">
   <Sidebar :isOpenSidebar="isOpenSidebar" @toggle-sidebar="toggleSideBar"/>
-  <div class="bgHome">
+  <div :class="getRoute() === 'contact-us' ? '' : 'bgHome'">
     <Navbar @toggle-sidebar="toggleSideBar"/>
     <div>
       <Nuxt />
@@ -17,25 +17,25 @@ import Navbar from '~/components/Navbar.vue';
 import Footer from '~/components/Footer.vue';
 import Sidebar from '~/components/Sidebar.vue';
 export default {
-
   name: 'default',
-
   components: {
     Navbar,
     Footer,
     Sidebar
   },
-
   data () {
+    console.log(this.$route.name);
     return {
-      isOpenSidebar: false
+      isOpenSidebar: false,
     }
   },
-
   methods: {
     toggleSideBar() {
       this.isOpenSidebar = !this.isOpenSidebar;
     },
+    getRoute() {
+      return this.$route.name
+    }
   },
 }
 </script>
