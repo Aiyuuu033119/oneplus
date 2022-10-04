@@ -46,7 +46,7 @@
                   'fab fa-instagram'
                   "
                 ></i
-              ></a>
+              ></a> 
           </div>
         </div>
       </div>
