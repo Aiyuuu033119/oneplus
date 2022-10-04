@@ -120,7 +120,7 @@ p {
         align-items: start !important;
     }
     .three-col .textWrap {
-        padding: 1em 2em !important;
+        padding: 1em 2em 1.5em !important;
     }
     .all-product .card-body {
         height: 80px;
@@ -250,5 +250,51 @@ p {
 
 .slick-dots li.slick-active button:before {
     color: #ff8b2b !important;
+}
 
+.link-hover-color:hover {
+    color: #2b9fff !important;
+}
+
+.oneplusgame .sticky-top nav {
+    border-bottom: 5px solid white;
+}
+
+.two-col .cardSize {
+    width: 100% !important;
+}
+
+.two-col .cardSize img.card-img-top{
+    height: 230px !important;
+}
+
+.newsPromo .newsThumb {
+    max-height: 250px !important;
+}
+
+@media only screen and (min-width: 1205px){
+    .two-col .cardSize {
+        width: 50% !important;
+    }
+
+    .two-col .cardSize img.card-img-top{
+        height: 180px !important;
+    }
+
+    .newsPromo .newsThumb {
+        max-height: 215px !important;
+    }
+}
+
+.howTo {
+    margin: 5rem 0;
+    padding: 5rem 0 !important;
+}
+
+.promotion {
+    margin-bottom: 5rem;
+}
+
+.footer {
+    padding: 60px 0 0 !important;
 }

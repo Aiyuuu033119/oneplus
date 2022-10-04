@@ -52,12 +52,61 @@
             <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade"
-                :class="active_product_favorite === 1 ? 'show active' : ''"
+                :class="active_product_favorite === 1 ? 'show active' : 'd-none'"
                 id="one"
                 role="tabpanel"
                 aria-labelledby="one-tab"
               >
-                <div class="section-home-col three-col" v-if="popular != null && popular.length > 0">
+                <div class="section-home-col three-col">
+                  <div class="cardSize">
+                    <div class="card">
+                      <nuxt-link :to="'/product-details/Call-of-Duty-Mobile'">
+                        <div
+                          class="imgWrap all-product"
+                          :style="'background-image: url(' + './img/games/bggames.png' + ');'"
+                        >
+                          <div class="card-img-top game-dp" style="background-image: url('./img/kategori/cat_20220617110224.jpg');"></div>
+                          <div class="card-body">
+                            <h5 class="card-title text-white" title="Free Fire">
+                              Call of Duty Mobile
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="textWrap">
+                          <p class="text-center">Harga mulai dari</p>
+                          <a class="btn btn-light bg-white border-2 products-btn">
+                            RP 22.201
+                          </a>
+                        </div>
+                      </nuxt-link>
+                    </div>
+                  </div>
+                  <div class="cardSize">
+                    <div class="card">
+                      <nuxt-link :to="'/product-details/Mobile-Legend'">
+                        <div
+                          class="imgWrap all-product"
+                          :style="'background-image: url(' + './img/games/bggames.png' + ');'"
+                        >
+                          <div class="card-img-top game-dp" style="background-image: url('./img/kategori/cat_20220801121105.jpg');"></div>
+                          <div class="card-body">
+                            <h5 class="card-title text-white" title="Free Fire">
+                              Mobile Legend
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="textWrap">
+                          <p class="text-center">Harga mulai dari</p>
+                          <a class="btn btn-light bg-white border-2 products-btn">
+                            RP 3.150
+                          </a>
+                        </div>
+                      </nuxt-link>
+                    </div>
+                  </div>
+                </div>
+                 
+                <!-- <div class="section-home-col three-col" v-if="popular != null && popular.length > 0">
                   <div class="cardSize" v-for="item in popular" :key="item.id">
                     <div class="card">
                       <nuxt-link :to="'/product-details/'+ item.url">
@@ -66,11 +115,6 @@
                           :style="'background-image: url(' + 'https://vogame.id/assets/img/games/bggames.png' + ');'"
                         >
                           <div class="card-img-top game-dp" style="background-image: url(https://vogame.id/cdn/kategori/cat_20220617110224.jpg);"></div>
-                          <!-- <img
-                            class="card-img-top"
-                            :src="'https://vogame.id/cdn/kategori/cat_20220617110224.jpg'"
-                            alt="Games 1"
-                          /> -->
                           <div class="card-body">
                             <h5 class="card-title text-white" title="Free Fire">
                               {{ item.nama }}
@@ -88,17 +132,158 @@
                   </div>
                 </div>
                 <div class="section-home-col three-col" v-else>
-                  Produk tidak ada
+                  Produk tidak ada -->
                 </div>
               </div>
               <div
                 class="tab-pane fade"
-                :class="active_product_favorite === 2 ? 'show active' : ''"
+                :class="active_product_favorite === 2 ? 'show active' : 'd-none'"
                 id="two"
                 role="tabpanel"
                 aria-labelledby="two-tab"
               >
-                <div class="section-home-col three-col" v-if="new_product != null && new_product.length > 0">
+                <div class="section-home-col three-col">
+                  <div class="cardSize">
+                    <div class="card">
+                      <nuxt-link :to="'/product-details/Mobile-Legend'">
+                        <div
+                          class="imgWrap all-product"
+                          :style="'background-image: url(' + './img/games/bggames.png' + ');'"
+                        >
+                          <div class="card-img-top game-dp" style="background-image: url('./img/kategori/cat_20220801121105.jpg');"></div>
+                          <div class="card-body">
+                            <h5 class="card-title text-white" title="Free Fire">
+                              Mobile Legend
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="textWrap">
+                          <p class="text-center">Harga mulai dari</p>
+                          <a class="btn btn-light bg-white border-2 products-btn">
+                            RP 3.150
+                          </a>
+                        </div>
+                      </nuxt-link>
+                    </div>
+                  </div>
+                  <div class="cardSize">
+                    <div class="card">
+                      <nuxt-link :to="'/product-details/GoRide'">
+                        <div
+                          class="imgWrap all-product"
+                          :style="'background-image: url(' + './img/games/bggames.png' + ');'"
+                        >
+                          <div class="card-img-top game-dp" style="background-image: url('./img/kategori/cat_20220622153352.jpg');"></div>
+                          <div class="card-body">
+                            <h5 class="card-title text-white" title="Free Fire">
+                              GoRide
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="textWrap">
+                          <p class="text-center">Harga mulai dari</p>
+                          <a class="btn btn-light bg-white border-2 products-btn">
+                            RP 10.000
+                          </a>
+                        </div>
+                      </nuxt-link>
+                    </div>
+                  </div>
+                  <div class="cardSize">
+                    <div class="card">
+                      <nuxt-link :to="'/product-details/GoCar'">
+                        <div
+                          class="imgWrap all-product"
+                          :style="'background-image: url(' + './img/games/bggames.png' + ');'"
+                        >
+                          <div class="card-img-top game-dp" style="background-image: url('./img/kategori/cat_20220622152228.jpg');"></div>
+                          <div class="card-body">
+                            <h5 class="card-title text-white" title="Free Fire">
+                              GoCar
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="textWrap">
+                          <p class="text-center">Harga mulai dari</p>
+                          <a class="btn btn-light bg-white border-2 products-btn">
+                            RP 25.000
+                          </a>
+                        </div>
+                      </nuxt-link>
+                    </div>
+                  </div>
+                  <div class="cardSize">
+                    <div class="card">
+                      <nuxt-link :to="'/product-details/Diva-Karaoke-Express'">
+                        <div
+                          class="imgWrap all-product"
+                          :style="'background-image: url(' + './img/games/bggames.png' + ');'"
+                        >
+                          <div class="card-img-top game-dp" style="background-image: url('./img/kategori/cat_20220622151232.jpg');"></div>
+                          <div class="card-body">
+                            <h5 class="card-title text-white" title="Free Fire">
+                              Diva Karaoke Express
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="textWrap">
+                          <p class="text-center">Harga mulai dari</p>
+                          <a class="btn btn-light bg-white border-2 products-btn">
+                            RP 90.000
+                          </a>
+                        </div>
+                      </nuxt-link>
+                    </div>
+                  </div>
+                  <div class="cardSize">
+                    <div class="card">
+                      <nuxt-link :to="'/product-details/Skype-Credit'">
+                        <div
+                          class="imgWrap all-product"
+                          :style="'background-image: url(' + './img/games/bggames.png' + ');'"
+                        >
+                          <div class="card-img-top game-dp" style="background-image: url('./img/kategori/cat_20220622140900.jpg');"></div>
+                          <div class="card-body">
+                            <h5 class="card-title text-white" title="Free Fire">
+                              Skype Credit
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="textWrap">
+                          <p class="text-center">Harga mulai dari</p>
+                          <a class="btn btn-light bg-white border-2 products-btn">
+                            RP 156.800
+                          </a>
+                        </div>
+                      </nuxt-link>
+                    </div>
+                  </div>
+                  <div class="cardSize">
+                    <div class="card">
+                      <nuxt-link :to="'/product-details/eBay-Gift-Card'">
+                        <div
+                          class="imgWrap all-product"
+                          :style="'background-image: url(' + './img/games/bggames.png' + ');'"
+                        >
+                          <div class="card-img-top game-dp" style="background-image: url('./img/kategori/cat_20220620055404.jpg');"></div>
+                          <div class="card-body">
+                            <h5 class="card-title text-white" title="Free Fire">
+                              eBay Gift Card
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="textWrap">
+                          <p class="text-center">Harga mulai dari</p>
+                          <a class="btn btn-light bg-white border-2 products-btn">
+                            RP 80.000
+                          </a>
+                        </div>
+                      </nuxt-link>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- <div class="section-home-col three-col" v-if="new_product != null && new_product.length > 0">
                   <div class="cardSize" v-for="item in new_product" :key="item.id">
                     <div class="card">
                       <nuxt-link :to="'/product-details/'+ item.url">
@@ -107,11 +292,6 @@
                           :style="'background-image: url(' + 'https://vogame.id/assets/img/games/bggames.png' + ');'"
                         >
                           <div class="card-img-top game-dp" style="background-image: url(https://vogame.id/cdn/kategori/cat_20220617110224.jpg);"></div>
-                          <!-- <img
-                            class="card-img-top"
-                            :src="'https://vogame.id/cdn/kategori/cat_20220617110224.jpg'"
-                            alt="Games 1"
-                          /> -->
                           <div class="card-body">
                             <h5 class="card-title text-white" title="Free Fire">
                               {{ item.nama }}
@@ -130,7 +310,7 @@
                 </div>
                 <div class="section-home-col three-col" v-else>
                   Produk tidak ada
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -492,7 +672,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3 class="text-white fw-bold">Top-up atau Beli item game, termurah dan tercepat di Vogame</h3>
+            <h3 class="text-white fw-bold mb-4">Top-up atau Beli item game, termurah dan tercepat di Vogame</h3>
           </div>
         </div>
         <div class="row">
@@ -535,7 +715,7 @@
         </div>
       </div>
     </section>
-    <section class="container">
+    <section class="container promotion">
       <div class="row">
         <div class="col-12">
           <!-- News & Promo -->
@@ -561,7 +741,6 @@
                   </div>
                   <a class="newsThumb" href="https://vogame.id/blog/Ini-Dia-Hero-Mage-Terbaik-Yang-Bisa-Kamu-Gunakan-Di-Akhir-Season-20-MLBB-" title="">
                     <img
-                      style="height: 180px;"
                       class="card-img-top"
                       src="https://vogame.id/cdn/uploads/blogpost_120210603110507.jpg"
                       alt="Ini Dia Hero Mage Terbaik Yang Bisa Kamu Gunakan Di Akhir Season 20 MLBB !"
@@ -595,7 +774,6 @@
                     href="https://vogame.id/blog/Kamu-Di-Tier-Warrior-Ingin-Naik-Ke-Epic-Pakai-Hero-Hero-Ini-"
                     title=""
                     ><img
-                      style="height: 180px;"
                       class="card-img-top"
                       src="https://vogame.id/cdn/uploads/blogpost_120210602170823.jpg"
                       alt="Kamu Di Tier Warrior Ingin Naik Ke Epic ? Pakai Hero-Hero Ini !"
@@ -720,21 +898,21 @@ export default {
       //   ],
       // },
       slider: [
-        // {
-        //   id: 1,
-        //   url: "",
-        //   src: "/img/slider/slider-1.png",
-        // },
-        // {
-        //   id: 2,
-        //   url: "",
-        //   src: "/img/slider/slider-2.jpg",
-        // },
-        // {
-        //   id: 3,
-        //   url: "",
-        //   src: "/img/slider/slider-3.jpg",
-        // },
+        {
+          id: 1,
+          url: "",
+          src: "/img/slider/slider-1.png",
+        },
+        {
+          id: 2,
+          url: "",
+          src: "/img/slider/slider-2.jpg",
+        },
+        {
+          id: 3,
+          url: "",
+          src: "/img/slider/slider-3.jpg",
+        },
       ],
       new_product: null,
       popular: null,
@@ -747,23 +925,23 @@ export default {
       this.active_product_favorite = index;
     },
   },
-  mounted() {
-    console.log(this.new_product);
-  },
-  async fetch() {
-    this.popular = await fetch(
-      process.env.apiUrl + "mobileapi/kategoripopular"
-    ).then((res) => res.json());
-    this.new_product = await fetch(
-      process.env.apiUrl + "mobileapi/kategori"
-    ).then((res) => res.json());
-    this.voucherz = await fetch(
-      process.env.apiUrl + "mobileapi/kategorivoucher"
-    ).then((res) => res.json());
+  // mounted() {
+  //   console.log(this.new_product);
+  // },
+  // async fetch() {
+  //   this.popular = await fetch(
+  //     process.env.apiUrl + "mobileapi/kategoripopular"
+  //   ).then((res) => res.json());
+  //   this.new_product = await fetch(
+  //     process.env.apiUrl + "mobileapi/kategorinew"
+  //   ).then((res) => res.json());
+  //   this.voucherz = await fetch(
+  //     process.env.apiUrl + "mobileapi/kategorivoucher"
+  //   ).then((res) => res.json());
 
-    this.slider = await fetch(process.env.apiUrl + "mobileapi/slider").then(
-      (res) => res.json()
-    );
-  },
+  //   this.slider = await fetch(process.env.apiUrl + "mobileapi/slider").then(
+  //     (res) => res.json()
+  //   );
+  // },
 };
 </script>

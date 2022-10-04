@@ -70,8 +70,8 @@
                 <form class="form">
                   <div class="form-group m-0">
                     <h6 class="d-block" for="selectDenom">Pilih Denominasi</h6>
-                    <div class="plan" v-if="detail">
-                      <div class="plan-item" v-for="(item, key) in detail.produk" :key="key">
+                    <div class="plan">
+                      <!-- <div class="plan-item" v-for="(item, key) in detail.produk" :key="key">
                         <input
                           type="radio"
                           name="radio1"
@@ -84,8 +84,8 @@
                           :for="item.nama"
                           >{{item.nama}}
                         </label>
-                      </div>
-                      <!-- <div class="plan-item">
+                      </div> -->
+                      <div class="plan-item">
                         <input
                           type="radio"
                           name="radio1"
@@ -94,7 +94,7 @@
                           value="963"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends 17 Diamonds"
                           >Mobile Legends 17 Diamonds</label
                         >
@@ -108,7 +108,7 @@
                           value="964"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends 67 Diamonds"
                           >Mobile Legends 67 Diamonds</label
                         >
@@ -122,7 +122,7 @@
                           value="965"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends 10 Diamonds"
                           >Mobile Legends 10 Diamonds</label
                         >
@@ -136,7 +136,7 @@
                           value="966"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends Season Pass (Premiun)"
                           >Mobile Legends Season Pass (Premiun)</label
                         >
@@ -150,7 +150,7 @@
                           value="967"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends Twilight Pass"
                           >Mobile Legends Twilight Pass</label
                         >
@@ -164,7 +164,7 @@
                           value="968"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends Starlight Seasonal Member"
                           >Mobile Legends Starlight Seasonal Member</label
                         >
@@ -178,7 +178,7 @@
                           value="969"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends Starlight Member"
                           >Mobile Legends Starlight Member</label
                         >
@@ -192,7 +192,7 @@
                           value="970"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends 3383 Diamonds"
                           >Mobile Legends 3383 Diamonds</label
                         >
@@ -206,7 +206,7 @@
                           value="971"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends 1708 Diamonds"
                           >Mobile Legends 1708 Diamonds</label
                         >
@@ -220,7 +220,7 @@
                           value="972"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends 836 Diamonds"
                           >Mobile Legends 836 Diamonds</label
                         >
@@ -234,7 +234,7 @@
                           value="973"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends 333 Diamonds"
                           >Mobile Legends 333 Diamonds</label
                         >
@@ -248,11 +248,11 @@
                           value="974"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           for="Mobile Legends 200 Diamonds"
                           >Mobile Legends 200 Diamonds</label
                         >
-                      </div> -->
+                      </div>
                     </div>
                   </div>
                 </form>
