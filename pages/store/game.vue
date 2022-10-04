@@ -1,272 +1,41 @@
 <template>
   <div
     class="tab-pane fade"
-    :class="active === 4 && 'show active'"
+    :class="active === 3 && 'show active'"
     id="four"
     role="tabpanel"
     aria-labelledby="four-tab"
   >
-    <div class="section-home-col seven-col mb-5">
-      <div class="cardSize">
+    <div
+      class="section-home-col seven-col mb-5"
+      v-if="game != null && game.length"
+    >
+      <div class="cardSize" v-for="item in game" :key="item.id">
         <div class="card">
-          <a href="/product-details/Mobile-Legend" title="">
+          <nuxt-link :to="'/product-details/' + item.url">
             <div
               class="card-img-top"
               style="
                 height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220801121105.jpg');
                 background-size: cover;
                 background-position: center center;
               "
-              alt="Mobile Legend"
+              :style="'background-image: url(' + item.foto + ');'"
+              :alt="item.nama"
             ></div>
             <div class="card-body">
-              <h5 class="card-title text-primary" title="Mobile Legend">Mobile Legend</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/OrangeGame" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220619004243.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="OrangeGame"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="OrangeGame">OrangeGame</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/Nintendo-US-Region-" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220619003223.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="Nintendo (US Region)"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="Nintendo (US Region)">
-                Nintendo (US Region)
+              <h5 class="card-title text-primary" :title="item.nama">
+                {{ item.nama }}
               </h5>
               <p class="card-text"></p>
             </div>
-          </a>
+          </nuxt-link>
         </div>
       </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/Mojang-Minecraft" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220619001318.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="Mojang Minecraft"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="Mojang Minecraft">
-                Mojang Minecraft
-              </h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/Marvel-Super-War" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220618220253.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="Marvel Super War"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="Marvel Super War">
-                Marvel Super War
-              </h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/Blizzard" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220617192340.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="Blizzard"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="Blizzard">Blizzard</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/XBOX-US-REGION-" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220620000511.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="XBOX (US REGION)"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="XBOX (US REGION)">
-                XBOX (US REGION)
-              </h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/WAWA-GAMES" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220617162508.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="WAWA GAMES"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="WAWA GAMES">WAWA GAMES</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/-SPEED-DRIFTERS" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220921174424.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt=" SPEED DRIFTERS"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title=" SPEED DRIFTERS">SPEED DRIFTERS</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/SKYEGRID" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220619011309.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="SKYEGRID"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="SKYEGRID">SKYEGRID</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/Razer-Pin" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220619010958.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="Razer Pin"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="Razer Pin">Razer Pin</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/PUBG-FOR-PC-STEAM-" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220617153322.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="PUBG FOR PC (STEAM)"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="PUBG FOR PC (STEAM)">
-                PUBG FOR PC (STEAM)
-              </h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
+    </div>
+    <div class="section-home-col seven-col mb-5" v-else>
+      <div class="col-12 text-center m-tb-40">
+        <h2 class="text-primary"><mark>Produk Kosong</mark></h2>
       </div>
     </div>
 
@@ -310,11 +79,18 @@
 <script>
 export default {
   name: "store",
-  props: ['active'],
+  props: ["active"],
   layout: "default",
 
   data() {
-    return {};
+    return {
+      game: null,
+    };
+  },
+  async fetch() {
+    this.game = await fetch(process.env.apiUrl + "/mobileapi/kategori").then(
+      (res) => res.json()
+    );
   },
 };
 </script>

@@ -1,270 +1,36 @@
 <template>
   <div
     class="tab-pane fade"
-    :class="active === 3 && 'show active'"
+    :class="active === 2 && 'show active'"
     id="three"
     role="tabpanel"
     aria-labelledby="three-tab"
   >
-    <div class="section-home-col seven-col mb-5">
-      <div class="cardSize">
+    <div class="section-home-col seven-col mb-5" v-if="voucherz != null && voucherz.length">
+      <div class="cardSize" v-for="item in voucherz" :key="item.id">
         <div class="card">
-          <a href="/product-details/GoRide" title="">
+          <nuxt-link :to="'/product-details/'+ item.url">
             <div
               class="card-img-top"
               style="
                 height: 139px;
-                background: url('https://vogame.co.id/cdn/kategori/cat_20220622153352.jpg');
                 background-size: cover;
                 background-position: center center;
               "
-              alt="GoRide"
+              :style="'background-image: url(' + item.foto + ');'"
+              :alt="item.nama"
             ></div>
             <div class="card-body">
-              <h5 class="card-title text-primary" title="GoRide">GoRide</h5>
+              <h5 class="card-title text-primary" :title="item.nama">{{item.nama}}</h5>
               <p class="card-text"></p>
             </div>
-          </a>
+          </nuxt-link>
         </div>
       </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/GoCar" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.co.id/cdn/kategori/cat_20220622152228.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="GoCar"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="GoCar">GoCar</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/Diva-Karaoke-Express" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.co.id/cdn/kategori/cat_20220622151232.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="Diva Karaoke Express"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="Diva Karaoke Express">
-                Diva Karaoke Express
-              </h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/Skype-Credit" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.co.id/cdn/kategori/cat_20220622140900.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="Skype Credit"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="Skype Credit">Skype Credit</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/eBay-Gift-Card" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.co.id/cdn/kategori/cat_20220620055404.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="eBay Gift Card"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="eBay Gift Card">eBay Gift Card</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/iTunes-Gift-Card-US-Region-" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.co.id/cdn/kategori/cat_20220620001149.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="iTunes Gift Card (US Region)"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="iTunes Gift Card (US Region)">
-                iTunes Gift Card (US Region)
-              </h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/H-M" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.co.id/cdn/kategori/cat_20220619224758.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="H&amp;M"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="H&amp;M">H&amp;M</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/OYO-Rooms" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.co.id/cdn/kategori/cat_20220619223834.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="OYO Rooms"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="OYO Rooms">OYO Rooms</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/Saint-Cinnamon" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.co.id/cdn/kategori/cat_20220619223008.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="Saint Cinnamon"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="Saint Cinnamon">Saint Cinnamon</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/POINT-BLANK-VOUCHER" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220618232611.jpg');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="POINT BLANK VOUCHER"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="POINT BLANK VOU">
-                POINT BLANK VOU
-              </h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="/product-details/Teahouse-by-Soup-Restauran" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220618140208.png');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="Teahouse by Soup R"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="Teahouse by Soup R">
-                Teahouse by Soup R
-              </h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="cardSize">
-        <div class="card">
-          <a href="https://vogame.id/produk/Sunny-Side" title="">
-            <div
-              class="card-img-top"
-              style="
-                height: 139px;
-                background: url('https://vogame.id/cdn/kategori/cat_20220618135809.png');
-                background-size: cover;
-                background-position: center center;
-              "
-              alt="Sunny Side"
-            ></div>
-            <div class="card-body">
-              <h5 class="card-title text-primary" title="Sunny Side">Sunny Side</h5>
-              <p class="card-text"></p>
-            </div>
-          </a>
-        </div>
+    </div>
+    <div class="section-home-col seven-col mb-5" v-else>
+      <div class="col-12 text-center m-tb-40">
+        <h2 class="text-primary"><mark>Produk Kosong</mark></h2>
       </div>
     </div>
 
@@ -312,7 +78,14 @@ export default {
   layout: "default",
 
   data() {
-    return {};
+    return {
+      voucherz: null,
+    };
+  },
+  async fetch() {
+    this.voucherz = await fetch(
+      process.env.apiUrl + "/mobileapi/kategorivoucher"
+    ).then((res) => res.json());
   },
 };
 </script>

@@ -17,7 +17,7 @@
               @click="setActive(2)"
               class="btn"
               :class="active == 2 ? 'btn-light' : ''"
-              >Top Up</a
+              >Voucher</a
             >
           </li>
           <li class="nav-item">
@@ -25,14 +25,6 @@
               @click="setActive(3)"
               class="btn"
               :class="active == 3 ? 'btn-light' : ''"
-              >Voucher</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              @click="setActive(4)"
-              class="btn"
-              :class="active == 4 ? 'btn-light' : ''"
               >Game</a
             >
           </li>
@@ -40,7 +32,6 @@
       </div>
       <div class="tab-content" id="myTabContent">
         <Shop :active="active"/>
-        <TopUp :active="active"/>
         <Voucher :active="active"/>
         <Game :active="active"/>
       </div>
@@ -50,14 +41,12 @@
   
 <script>
 import Shop from "./shop.vue";
-import TopUp from "./topup.vue";
 import Voucher from "./voucher.vue";
 import Game from "./game.vue";
 export default {
   name: "store",
   components: {
     Shop,
-    TopUp,
     Voucher,
     Game
   },

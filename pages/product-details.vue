@@ -71,21 +71,21 @@
                   <div class="form-group m-0">
                     <h6 class="d-block" for="selectDenom">Pilih Denominasi</h6>
                     <div class="plan">
-                      <div class="plan-item">
+                      <div class="plan-item" v-for="(item, key) in detail.produk" :key="key">
                         <input
                           type="radio"
                           name="radio1"
-                          data-harga="10500"
-                          id="Mobile Legends 33 Diamonds	"
-                          value="962"
+                          :data-harga="item.harga"
+                          :id="item.nama"
+                          :value="item.id"
                         />
                         <label
                           class="free-label four col"
-                          for="Mobile Legends 33 Diamonds	"
-                          >Mobile Legends 33 Diamonds
+                          :for="item.nama"
+                          >{{item.nama}}
                         </label>
                       </div>
-                      <div class="plan-item">
+                      <!-- <div class="plan-item">
                         <input
                           type="radio"
                           name="radio1"
@@ -252,7 +252,7 @@
                           for="Mobile Legends 200 Diamonds"
                           >Mobile Legends 200 Diamonds</label
                         >
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </form>
@@ -441,13 +441,16 @@ export default {
       return this._routerRoot._route.params.name.replace(/-/g,' ');
     },
   },
+  data() {
+    return {
+      detail: null,
+    };
+  },
   async fetch() {
-    this.popular = await fetch(
-      process.env.apiUrl + "/mobileapi/kategorisingle/"
+    this.detail = await fetch(
+      process.env.apiUrl + "/mobileapi/kategorisingle/"+this._routerRoot._route.params.name
     ).then((res) => res.json());
-    this.new_product = await fetch(
-      process.env.apiUrl + "/mobileapi/kategori"
-    )
+    
   },
 };
 </script>
