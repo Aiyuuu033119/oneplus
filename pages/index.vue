@@ -752,16 +752,16 @@ export default {
   },
   async fetch() {
     this.popular = await fetch(
-      process.env.apiUrl + "/mobileapi/kategoripopular"
+      process.env.apiUrl + "mobileapi/kategoripopular"
     ).then((res) => res.json());
     this.new_product = await fetch(
-      process.env.apiUrl + "/mobileapi/kategori"
+      process.env.apiUrl + "mobileapi/kategori"
     ).then((res) => res.json());
     this.voucherz = await fetch(
-      process.env.apiUrl + "/mobileapi/kategorivoucher"
+      process.env.apiUrl + "mobileapi/kategorivoucher"
     ).then((res) => res.json());
 
-    this.slider = await fetch(process.env.apiUrl + "/mobileapi/slider").then(
+    this.slider = await fetch(process.env.apiUrl + "mobileapi/slider").then(
       (res) => res.json()
     );
   },
