@@ -4,208 +4,11 @@
       <div class="row">
         <div class="col-12 p-0" :class="slider.length != 0 ? 'true' : 'false'" v-if="slider.length != 0">
           <Carousel v-if="slider.length != 0" v-bind="bannerSlider" class="featuredBanner slick-dotted" :class="slider.length === 0 ? 'd-none' : ''">
-            <!-- <div class="p-2" v-for="item in slider" :key="item.id"> -->
-              <nuxt-link v-for="(item, key) in slider" :key="item.id" :to="item.url">
-                <!-- <div class="ratio ratio-16x9"> -->
-                  <img :src="'/img/slider/slider-'+(key+1).toString()+'.png'" class="rounded">
-                <!-- </div> -->
-              </nuxt-link>
-            <!-- </div> -->
+            <nuxt-link v-for="(item, key) in slider" :key="item.id" :to="item.url">
+                <img :src="'/img/slider/slider-'+(key+1).toString()+'.png'" class="rounded">
+            </nuxt-link>
           </Carousel>
           <!-- Featured Banner -->
-          <!-- <div
-            class="featuredBanner slick-initialized slick-slider slick-dotted"
-          >
-            <button
-              class="slick-prev slick-arrow"
-              aria-label="Previous"
-              type="button"
-              style=""
-            >
-              Previous
-            </button>
-            <div class="slick-list draggable" style="padding: 0px 350px">
-              <div
-                class="slick-track"
-                style="
-                  opacity: 1;
-                  width: 9616px;
-                  transform: translate3d(-4808px, 0px, 0px);
-                  transition: transform 300ms ease 0s;
-                "
-              >
-                <div
-                  class="slideItem slick-slide slick-cloned"
-                  data-slick-index="-2"
-                  id=""
-                  aria-hidden="true"
-                  tabindex="-1"
-                  style="width: 1202px"
-                >
-                  <a href="https://vogame.id" title="banner 1" tabindex="-1"
-                    ><img
-                      src="https://vogame.id/cdn/promo/promo_upl20210107092612.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div
-                  class="slideItem slick-slide slick-cloned slick-center"
-                  data-slick-index="-1"
-                  id=""
-                  aria-hidden="true"
-                  tabindex="-1"
-                  style="width: 1202px"
-                >
-                  <a href="https://vogame.id" title="banner 1" tabindex="-1"
-                    ><img
-                      src="https://vogame.id/cdn/promo/promo_upl20210105105750.png"
-                      alt=""
-                  /></a>
-                </div>
-                <div
-                  class="slideItem slick-slide"
-                  data-slick-index="0"
-                  aria-hidden="true"
-                  tabindex="-1"
-                  role="tabpanel"
-                  id="slick-slide00"
-                  aria-describedby="slick-slide-control00"
-                  style="width: 1202px"
-                >
-                  <a href="https://vogame.id" title="banner 1" tabindex="-1"
-                    ><img
-                      src="https://vogame.id/cdn/promo/promo_upl20210107092722.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div
-                  class="slideItem slick-slide"
-                  data-slick-index="1"
-                  aria-hidden="true"
-                  tabindex="0"
-                  role="tabpanel"
-                  id="slick-slide01"
-                  aria-describedby="slick-slide-control01"
-                  style="width: 1202px"
-                >
-                  <a href="https://vogame.id" title="banner 1" tabindex="0"
-                    ><img
-                      src="https://vogame.id/cdn/promo/promo_upl20210107092612.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div
-                  class="
-                    slideItem
-                    slick-slide slick-current slick-active slick-center
-                  "
-                  data-slick-index="2"
-                  aria-hidden="false"
-                  tabindex="-1"
-                  role="tabpanel"
-                  id="slick-slide02"
-                  aria-describedby="slick-slide-control02"
-                  style="width: 1202px"
-                >
-                  <a href="https://vogame.id" title="banner 1" tabindex="-1"
-                    ><img
-                      src="https://vogame.id/cdn/promo/promo_upl20210105105750.png"
-                      alt=""
-                  /></a>
-                </div>
-                <div
-                  class="slideItem slick-slide slick-cloned"
-                  data-slick-index="3"
-                  id=""
-                  aria-hidden="true"
-                  tabindex="-1"
-                  style="width: 1202px"
-                >
-                  <a href="https://vogame.id" title="banner 1" tabindex="-1"
-                    ><img
-                      src="https://vogame.id/cdn/promo/promo_upl20210107092722.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div
-                  class="slideItem slick-slide slick-cloned"
-                  data-slick-index="4"
-                  id=""
-                  aria-hidden="true"
-                  tabindex="-1"
-                  style="width: 1202px"
-                >
-                  <a href="https://vogame.id" title="banner 1" tabindex="-1"
-                    ><img
-                      src="https://vogame.id/cdn/promo/promo_upl20210107092612.jpg"
-                      alt=""
-                  /></a>
-                </div>
-                <div
-                  class="slideItem slick-slide slick-cloned"
-                  data-slick-index="5"
-                  id=""
-                  aria-hidden="true"
-                  tabindex="-1"
-                  style="width: 1202px"
-                >
-                  <a href="https://vogame.id" title="banner 1" tabindex="-1"
-                    ><img
-                      src="https://vogame.id/cdn/promo/promo_upl20210105105750.png"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="slick-next slick-arrow"
-              aria-label="Next"
-              type="button"
-              style=""
-            >
-              Next
-            </button>
-            <ul class="slick-dots" style="" role="tablist">
-              <li class="" role="presentation">
-                <button
-                  type="button"
-                  role="tab"
-                  id="slick-slide-control00"
-                  aria-controls="slick-slide00"
-                  aria-label="1 of 3"
-                  tabindex="-1"
-                >
-                  1
-                </button>
-              </li>
-              <li role="presentation" class="">
-                <button
-                  type="button"
-                  role="tab"
-                  id="slick-slide-control01"
-                  aria-controls="slick-slide01"
-                  aria-label="2 of 3"
-                  tabindex="0"
-                  aria-selected="true"
-                >
-                  2
-                </button>
-              </li>
-              <li role="presentation" class="slick-active">
-                <button
-                  type="button"
-                  role="tab"
-                  id="slick-slide-control02"
-                  aria-controls="slick-slide02"
-                  aria-label="3 of 3"
-                  tabindex="-1"
-                >
-                  3
-                </button>
-              </li>
-            </ul>
-          </div> -->
         </div>
       </div>
     </section>
@@ -220,7 +23,7 @@
                 <li class="nav-item">
                   <a
                     @click="setActiveProductFavorite(1)"
-                    class="btn"
+                    class="btn btn-tab"
                     :class="active_product_favorite === 1 ? 'btn-light' : ''"
                     id="one-tab"
                     data-toggle="tab"
@@ -233,7 +36,7 @@
                 <li class="nav-item">
                   <a
                     @click="setActiveProductFavorite(2)"
-                    class="btn"
+                    class="btn btn-tab"
                     :class="active_product_favorite === 2 ? 'btn-light' : ''"
                     id="two-tab"
                     data-toggle="tab"
@@ -259,14 +62,15 @@
                     <div class="card">
                       <nuxt-link :to="'/product-details/'+ item.url">
                         <div
-                          class="imgWrap"
+                          class="imgWrap all-product"
                           :style="'background-image: url(' + 'https://vogame.id/assets/img/games/bggames.png' + ');'"
                         >
-                          <img
+                          <div class="card-img-top game-dp" style="background-image: url(https://vogame.id/cdn/kategori/cat_20220617110224.jpg);"></div>
+                          <!-- <img
                             class="card-img-top"
                             :src="'https://vogame.id/cdn/kategori/cat_20220617110224.jpg'"
                             alt="Games 1"
-                          />
+                          /> -->
                           <div class="card-body">
                             <h5 class="card-title text-white" title="Free Fire">
                               {{ item.nama }}
@@ -274,7 +78,10 @@
                           </div>
                         </div>
                         <div class="textWrap">
-                          <p>{{ item.publisher ? newp.publisher :  "Lorem Ipsum"}}</p>
+                          <p class="text-center">Harga mulai dari</p>
+                          <a class="btn btn-primary border text-white products-btn">
+                            RP 22.201
+                          </a>
                         </div>
                       </nuxt-link>
                     </div>
@@ -292,26 +99,30 @@
                 aria-labelledby="two-tab"
               >
                 <div class="section-home-col three-col" v-if="new_product != null && new_product.length > 0">
-                  <div class="cardSize" v-for="newp in new_product" :key="newp.id">
+                  <div class="cardSize" v-for="item in new_product" :key="item.id">
                     <div class="card">
-                      <nuxt-link :to="'/product-details/'+newp.url">
+                      <nuxt-link :to="'/product-details/'+ item.url">
                         <div
-                          class="imgWrap"
+                          class="imgWrap all-product"
                           :style="'background-image: url(' + 'https://vogame.id/assets/img/games/bggames.png' + ');'"
                         >
-                          <img
+                          <div class="card-img-top game-dp" style="background-image: url(https://vogame.id/cdn/kategori/cat_20220617110224.jpg);"></div>
+                          <!-- <img
                             class="card-img-top"
                             :src="'https://vogame.id/cdn/kategori/cat_20220617110224.jpg'"
                             alt="Games 1"
-                          />
+                          /> -->
                           <div class="card-body">
                             <h5 class="card-title text-white" title="Free Fire">
-                              {{ newp.nama }}
+                              {{ item.nama }}
                             </h5>
                           </div>
                         </div>
                         <div class="textWrap">
-                          <p>{{ newp.publisher ? newp.publisher :  "Lorem Ipsum"}}</p>
+                          <p class="text-center">Harga mulai dari</p>
+                          <a class="btn btn-primary border text-white products-btn">
+                            RP 22.201
+                          </a>
                         </div>
                       </nuxt-link>
                     </div>
@@ -338,12 +149,12 @@
                 <a
                   href="/store"
                   title=""
-                  class="btn btn-primary"
+                  class="btn btn-secondary btn-tab"
                   >Lihat Lainnya</a
                 >
               </div>
             </div>
-            <div class="section-home-col seven-col">
+            <div class="section-home-col six-col">
               <div class="cardSize">
                 <div class="card">
                   <a
@@ -353,18 +164,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220615194520.png');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Arena of Valor"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Arena of Valor">
-                        Arena of Valor
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Arena of Valor">
+                          Arena of Valor
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -378,18 +188,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220616115322.jpeg');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Point Blank DIRECT"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Point Blank DIRECT">
-                        Point Blank DIRECT
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Point Blank DIRECT">
+                          Point Blank DIRECT
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -403,18 +212,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220616153733.png');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Battlenet Card"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Battlenet Card">
-                        Battlenet Card
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Battlenet Card">
+                          Battlenet Card
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -428,18 +236,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220616154909.png');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Grab Voucher"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Grab Voucher">
-                        Grab Voucher
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Grab Voucher">
+                          Grab Voucher
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -453,18 +260,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220616160023.png');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Dairy Queen"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Dairy Queen">
-                        Dairy Queen
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Dairy Queen">
+                          Dairy Queen
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -478,16 +284,15 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220617103654.png');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Bakmi Gm "
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Bakmi Gm ">Bakmi Gm</h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Bakmi Gm ">Bakmi Gm</h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -498,16 +303,15 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220617103909.jpg');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Excelso"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Excelso">Excelso</h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Excelso">Excelso</h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -521,18 +325,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220617104333.png');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="GREYHOUND CAFE"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="GREYHOUND CAFE">
-                        GREYHOUND CAFE
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="GREYHOUND CAFE">
+                          GREYHOUND CAFE
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -546,18 +349,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220617104829.jpg');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Haagen Dazs"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Haagen Dazs">
-                        Haagen Dazs
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Haagen Dazs">
+                          Haagen Dazs
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -571,18 +373,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220617105344.png');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Hong Kong Cafe"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Hong Kong Cafe">
-                        Hong Kong Cafe
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Hong Kong Cafe">
+                          Hong Kong Cafe
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -596,18 +397,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220619235425.jpg');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Kafe Betawi"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Kafe Betawi">
-                        Kafe Betawi
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Kafe Betawi">
+                          Kafe Betawi
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -621,18 +421,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220617110141.jpg');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Kantin Kendal"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Kantin Kendal">
-                        Kantin Kendal
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Kantin Kendal">
+                          Kantin Kendal
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -646,18 +445,17 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220617110224.jpg');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Call of Duty Mobile"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Call of Duty Mobile">
-                        Call of Duty Mobile
-                      </h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Call of Duty Mobile">
+                          Call of Duty Mobile
+                        </h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -671,16 +469,15 @@
                     <div
                       class="card-img-top"
                       style="
-                        height: 139px;
                         background: url('https://vogame.id/cdn/kategori/cat_20220617110407.png');
                         background-size: cover;
                         background-position: center center;
                       "
                       alt="Kimukatsu"
-                    ></div>
-                    <div class="card-body">
-                      <h5 class="card-title text-primary" title="Kimukatsu">Kimukatsu</h5>
-                      <p class="card-text"></p>
+                    >
+                      <div class="card-body overlay-bg">
+                        <h5 class="card-title text-white" title="Kimukatsu">Kimukatsu</h5>
+                      </div>
                     </div>
                   </a>
                 </div>
@@ -857,32 +654,32 @@ export default {
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
-        centerPadding: "250px",
+        centerPadding: "40px",
         focusOnSelect: true,
         infinite: true,
         slidesToShow: 1,
         speed: 500,
         variableWidth: true,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 3,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 1,
-            },
-          },
-        ],
+        // responsive: [
+        //   {
+        //     breakpoint: 768,
+        //     settings: {
+        //       arrows: false,
+        //       centerMode: true,
+        //       centerPadding: "0px",
+        //       slidesToShow: 3,
+        //     },
+        //   },
+        //   {
+        //     breakpoint: 480,
+        //     settings: {
+        //       arrows: false,
+        //       centerMode: true,
+        //       centerPadding: "40px",
+        //       slidesToShow: 1,
+        //     },
+        //   },
+        // ],
       },
       // tabsSlider: {
       //   slidesToShow: 5,

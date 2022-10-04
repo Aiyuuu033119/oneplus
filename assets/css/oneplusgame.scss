@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 $theme-colors: (
-    "light":      #d4e7f1,
+    "light":      #FFBD86,
     "dark":       #020a07,
-    "primary":    #063486,
-    "secondary":  #2251b5,
+    "primary":    #FD8B87,
+    "secondary":  #FFBD86,
     "info":       #1e9dea,
     "accent1":    #916a9e,
     "accent2":    #2cd4d0,
@@ -24,4 +24,191 @@ body {
 }
 p {
     font-family: 'Overpass', sans-serif;
+}
+
+// .slick-slide{
+//     opacity: .5 !important;
+//     transition: all 300ms ease-out !important;
+// }
+
+// .slick-slide img{
+//     scale: 0.8 !important;
+//     transition: all 300ms ease-out !important;
+// }
+
+// .slick-active{
+//     opacity: 1 !important;
+//     transition: all 300ms ease-out !important;
+// }
+
+// .slick-active img{
+//     scale: 1 !important;
+//     transition: all 300ms ease-out !important;
+// }
+
+.section-home-col .card{
+    border-radius: 10px !important;
+}
+
+.three-col .imgWrap img {
+    height: 75px !important;
+    width: 75px !important;
+}
+
+.section-home-col .card img {
+    border-radius: 50% !important;
+}
+
+.game-dp {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid white;
+    translate: 0 !important;
+}
+
+.three-col .cardSize {
+    width: 50% !important;
+}
+
+.three-col .imgWrap .card-title {
+    font-size: 12px !important;
+}
+
+.three-col .imgWrap {
+    padding: 2em 1em 0 !important;
+    margin-bottom: 0em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.three-col .textWrap {
+    padding: 1em !important;
+}
+
+
+.all-product .card-body {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px !important;
+    translate: 0 !important;
+}
+
+@media only screen and (min-width: 768px){
+    .three-col .cardSize {
+        width: 50% !important;
+    }
+    .game-dp {
+        width: 80px;
+        height: 80px;
+        translate: 0 25px !important;
+    }
+    .three-col .imgWrap .card-title {
+        font-size: 18px !important;
+    }
+
+    .three-col .imgWrap {
+        padding: 3.5em 1.5em 0 !important;
+        margin-bottom: 1.5em !important;
+    }
+    .three-col .textWrap {
+        padding: 1em 2em !important;
+    }
+    .all-product .card-body {
+        height: 80px;
+        translate: 0 25px !important;
+    }
+}
+
+@media only screen and (min-width: 1205px){
+    .three-col .cardSize {
+        width: 33% !important;
+    }
+}
+
+.three-col .textWrap p{
+    margin-bottom: 0 !important;
+}
+
+.products-btn {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 5px !important;
+}
+
+.section-home-col {
+    justify-content: flex-start !important;
+}
+
+.btn-tab,
+.registerBtn {
+    border-radius: 5px !important;
+}
+
+.section-title-col.sticky-top {
+    top: 69px !important;
+}
+
+.section-home-col .card:hover {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    box-shadow: 0 2px 10px rgb(83 34 194 / 16%) !important
+}
+
+.section-home-col .card {
+    box-shadow: 0 2px 10px rgb(83 34 194 / 16%) !important
+}
+
+.six-col .cardSize {
+    width: 50%;
+}
+
+.six-col .cardSize .card-img-top {
+    height: 175px;
+}
+
+@media only screen and (min-width: 500px){
+    .six-col .cardSize {
+        width: 33.33%;
+    }
+    .six-col .cardSize .card-img-top {
+        height: 135px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .six-col .cardSize {
+        width: 25%;
+    }
+    .six-col .cardSize .card-img-top {
+        height: 145px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .six-col .cardSize {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1205px){
+    .six-col .cardSize {
+        width: 16.6%;
+    }
+
+    .six-col .cardSize .card-img-top {
+        height: 190px;
+    }
+}
+
+.overlay-bg {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
