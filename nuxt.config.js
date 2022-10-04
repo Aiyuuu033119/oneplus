@@ -22,7 +22,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '/css/bootstrap.min.css' }
+      { rel: 'stylesheet', href: '/css/bootstrap.min.css' },
     ],
     script: [
       { src: '/js/jquery-3.5.1.min.js' },

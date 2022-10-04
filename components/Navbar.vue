@@ -27,7 +27,7 @@
                   placeholder="Cari Games"
                 />
                 <span class="input-group-append">
-                  <button class="btn btn-light search-icon" type="button">
+                  <button class="btn btn-light search-icon bg-secondary text-white " type="button">
                     <i class="fas fa-search"></i>
                   </button>
                 </span>

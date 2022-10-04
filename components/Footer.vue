@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer bg-primary">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
@@ -16,7 +16,7 @@
       </div>
       <div class="row">
         <div class="col-12 col-lg-6 mb-3">
-          <p class="m-0">
+          <p class="m-0 text-white">
             <strong>PT Maju Selaras Komputer</strong><br />
             Ruko Citra Bisnis Park, Jalan Peta Barat Blok G No 23<br />
             Kalideres - Jakarta Barat
@@ -25,10 +25,10 @@
         <div class="col-12 col-lg-6">
           <ul class="list-unstyled">
             <li>
-              <nuxt-link to="/" class="link-color link-hover-color">Syarat &amp; Ketentuan</nuxt-link>
+              <nuxt-link to="/" class="link-color text-white link-hover-color">Syarat &amp; Ketentuan</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/contact-us" class="link-color link-hover-color">Hubungi Kami</nuxt-link>
+              <nuxt-link to="/contact-us" class="link-color text-white link-hover-color">Hubungi Kami</nuxt-link>
             </li>
           </ul>
           <div class="socialmedia">
@@ -54,10 +54,10 @@
     <hr />
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 mb-3">
+        <div class="col-12 col-lg-6 mb-3 text-white">
           © 2020 - 2022 {{ appName }}. All Rights Reserved
         </div>
-        <div class="col-12 col-lg-6 mb-3">
+        <div class="col-12 col-lg-6 mb-3 text-white">
           <a href="#top" class="copyright link-color link-hover-color"
             >Kembali keatas <i class="fas fa-arrow-up"></i
           ></a>

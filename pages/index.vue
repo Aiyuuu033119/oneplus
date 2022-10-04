@@ -24,7 +24,7 @@
                   <a
                     @click="setActiveProductFavorite(1)"
                     class="btn btn-tab"
-                    :class="active_product_favorite === 1 ? 'btn-light' : ''"
+                    :class="active_product_favorite === 1 ? 'btn-light bg-white bg-white text-secondary' : ''"
                     id="one-tab"
                     data-toggle="tab"
                     role="tab"
@@ -37,7 +37,7 @@
                   <a
                     @click="setActiveProductFavorite(2)"
                     class="btn btn-tab"
-                    :class="active_product_favorite === 2 ? 'btn-light' : ''"
+                    :class="active_product_favorite === 2 ? 'btn-light bg-white text-secondary' : ''"
                     id="two-tab"
                     data-toggle="tab"
                     role="tab"
@@ -79,7 +79,7 @@
                         </div>
                         <div class="textWrap">
                           <p class="text-center">Harga mulai dari</p>
-                          <a class="btn btn-primary border text-white products-btn">
+                          <a class="btn btn-light bg-white border-2 products-btn">
                             RP 22.201
                           </a>
                         </div>
@@ -120,7 +120,7 @@
                         </div>
                         <div class="textWrap">
                           <p class="text-center">Harga mulai dari</p>
-                          <a class="btn btn-primary border text-white products-btn">
+                          <a class="btn btn-light bg-white border-2 products-btn">
                             RP 22.201
                           </a>
                         </div>
@@ -149,7 +149,7 @@
                 <a
                   href="/store"
                   title=""
-                  class="btn btn-secondary btn-tab"
+                  class="btn btn-secondary btn-tab bg-white text-secondary"
                   >Lihat Lainnya</a
                 >
               </div>
@@ -492,7 +492,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3 class="text-primary">Top-up atau Beli item game, termurah dan tercepat di Vogame</h3>
+            <h3 class="text-white fw-bold">Top-up atau Beli item game, termurah dan tercepat di Vogame</h3>
           </div>
         </div>
         <div class="row">
@@ -502,8 +502,8 @@
               title="illustration 1"
               width="120"
             />
-            <h5 class="text-primary">Top Up Game Favoritmu</h5>
-            <p class="card-text">
+            <h5 class="text-white fw-bold">Top Up Game Favoritmu</h5>
+            <p class="card-text text-white">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
             </p>
@@ -514,8 +514,8 @@
               title="illustration 2"
               width="120"
             />
-            <h5 class="text-primary">Pilih Nominal Dan Bayar</h5>
-            <p class="card-text">
+            <h5 class="text-white fw-bold">Pilih Nominal Dan Bayar</h5>
+            <p class="card-text text-white">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
             </p>
@@ -526,8 +526,8 @@
               title="illustration 3"
               width="120"
             />
-            <h5 class="text-primary">Dapatkan Item/Voucher</h5>
-            <p class="card-text">
+            <h5 class="text-white fw-bold">Dapatkan Item/Voucher</h5>
+            <p class="card-text text-white">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
             </p>
@@ -546,7 +546,7 @@
                 <a
                   href="https://vogame.id/blog"
                   title=""
-                  class="btn btn-primary"
+                  class="btn btn-secondary btn-tab bg-white text-secondary"
                   >Artikel Lainnya</a
                 >
               </div>
@@ -556,7 +556,7 @@
                 <div class="card">
                   <div class="float-rt">
                     <a href="#" title="">
-                      <svg class="svg-inline--fa fa-share-alt fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="share-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z"></path></svg>
+                      <i class="fas fa-share-alt"></i>
                     </a>
                   </div>
                   <a class="newsThumb" href="https://vogame.id/blog/Ini-Dia-Hero-Mage-Terbaik-Yang-Bisa-Kamu-Gunakan-Di-Akhir-Season-20-MLBB-" title="">
@@ -568,7 +568,7 @@
                   /></a>
                   <div class="card-body">
                     <h5
-                      class="text-primary"
+                      class="text-black"
                       title="Ini Dia Hero Mage Terbaik Yang Bisa Kamu Gunakan Di Akhir Season 20 MLBB !"
                     >
                       <a href="#" title=""
@@ -586,19 +586,9 @@
               <div class="cardSize">
                 <div class="card">
                   <div class="float-rt">
-                    <a href="#" title=""
-                      ><svg
-                        class="svg-inline--fa fa-share-alt fa-w-14"
-                        aria-hidden="true"
-                        data-prefix="fas"
-                        data-icon="share-alt"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                        data-fa-i2svg=""
-                      >
-                        <path fill="currentColor" d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z"></path></svg>
-                      </a>
+                    <a href="#" title="">
+                      <i class="fas fa-share-alt"></i>
+                    </a>
                   </div>
                   <a
                     class="newsThumb"
@@ -612,7 +602,7 @@
                   /></a>
                   <div class="card-body">
                     <h5
-                      class="text-primary"
+                    class="text-black"
                       title="Kamu Di Tier Warrior Ingin Naik Ke Epic ? Pakai Hero-Hero Ini !"
                     >
                       <a href="#" title=""

@@ -7,24 +7,24 @@
           <li class="nav-item">
             <a
               @click="setActive(1)"
-              class="btn"
-              :class="active == 1 ? 'btn-light' : '' "
+              class="btn btn-tab"
+              :class="active == 1 ? 'btn-light bg-white bg-white text-secondary' : '' "
               >Semua Produk</a
             >
           </li>
           <li class="nav-item">
             <a
               @click="setActive(2)"
-              class="btn"
-              :class="active == 2 ? 'btn-light' : ''"
+              class="btn btn-tab"
+              :class="active == 2 ? 'btn-light bg-white bg-white text-secondary' : ''"
               >Voucher</a
             >
           </li>
           <li class="nav-item">
             <a
               @click="setActive(3)"
-              class="btn"
-              :class="active == 3 ? 'btn-light' : ''"
+              class="btn btn-tab"
+              :class="active == 3 ? 'btn-light bg-white bg-white text-secondary' : ''"
               >Game</a
             >
           </li>

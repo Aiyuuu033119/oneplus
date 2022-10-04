@@ -24,7 +24,7 @@
               :alt="item.nama"
             ></div>
             <div class="card-body">
-              <h5 class="card-title text-primary" :title="item.nama">
+              <h5 class="card-title text-black" :title="item.nama">
                 {{ item.nama }}
               </h5>
               <p class="card-text"></p>

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&display=swap');
 $theme-colors: (
-    "light":      #FFBD86,
+    "light":      #2b9fff,
     "dark":       #020a07,
-    "primary":    #FD8B87,
-    "secondary":  #FFBD86,
+    "primary":    #FF8B2B,
+    "secondary":  #2b9fff,
     "info":       #1e9dea,
     "accent1":    #916a9e,
     "accent2":    #2cd4d0,
@@ -13,17 +13,17 @@ $theme-colors: (
     "danger":     #f61b03,
 );
 
-$font-family-base : 'Overpass';
+$font-family-base : 'League Spartan';
 $link-color:                 #020a07;
 $link-hover-color:           #063486;
 
 @import "~bootstrap/scss/bootstrap";
 
 body {
-    font-family: 'Overpass', sans-serif;
+    font-family: 'League Spartan', sans-serif;
 }
 p {
-    font-family: 'Overpass', sans-serif;
+    font-family: 'League Spartan', sans-serif;
 }
 
 // .slick-slide{
@@ -82,8 +82,8 @@ p {
     margin-bottom: 0em !important;
     display: flex;
     flex-direction: column;
-    justify-content: center !important;
     align-items: center !important;
+    justify-content: center !important;
 }
 
 .three-col .textWrap {
@@ -115,6 +115,9 @@ p {
     .three-col .imgWrap {
         padding: 3.5em 1.5em 0 !important;
         margin-bottom: 1.5em !important;
+        display: flex;
+        flex-direction: row;
+        align-items: start !important;
     }
     .three-col .textWrap {
         padding: 1em 2em !important;
@@ -147,7 +150,7 @@ p {
 
 .btn-tab,
 .registerBtn {
-    border-radius: 5px !important;
+    border-radius: 25px !important;
 }
 
 .section-title-col.sticky-top {
@@ -211,4 +214,41 @@ p {
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+
+.section-home-col.two-col .card img {
+    border-radius: 20px !important;
+}
+
+.newsPromo .newsThumb {
+    border-radius: 8px 8px 0px 0px !important;
+}
+
+ 
+.newsPromo .section-home-col.two-col .card .newsThumb img.card-img-top {
+    border-radius: 0px !important;
+}
+
+.products-btn {
+    color: #2b9fff !important;
+    transition: all 200ms ease-out;
+}
+
+.products-btn:hover {
+    background: #2b9fff !important;
+    color: #FFF !important;
+}
+
+.payment-step-container:hover{
+    background: #f5f5f5;
+    color: #2b9fff !important;
+}
+
+.howTo {
+    background: #ff8b2b !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ff8b2b !important;
+
 }

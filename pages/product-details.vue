@@ -70,7 +70,7 @@
                 <form class="form">
                   <div class="form-group m-0">
                     <h6 class="d-block" for="selectDenom">Pilih Denominasi</h6>
-                    <div class="plan">
+                    <div class="plan" v-if="detail">
                       <div class="plan-item" v-for="(item, key) in detail.produk" :key="key">
                         <input
                           type="radio"
@@ -80,7 +80,7 @@
                           :value="item.id"
                         />
                         <label
-                          class="free-label four col"
+                          class="free-label four col border-secondary border border-solid"
                           :for="item.nama"
                           >{{item.nama}}
                         </label>
@@ -304,7 +304,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title text-primary" title="PLAYSTATION (US REGION)">
+                      <h5 class="card-title text-black fw-bold" title="PLAYSTATION (US REGION)">
                         PLAYSTATION (US REGION)
                       </h5>
                       <p class="card-text">Game</p>
@@ -325,7 +325,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title text-primary" title="Lokapala">Lokapala</h5>
+                      <h5 class="card-title text-black fw-bold" title="Lokapala">Lokapala</h5>
                       <p class="card-text">Game</p>
                     </div>
                   </a>
@@ -347,7 +347,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title text-primary" title="Garena Shell New">
+                      <h5 class="card-title text-black fw-bold" title="Garena Shell New">
                         Garena Shell New
                       </h5>
                       <p class="card-text">Game</p>
@@ -371,7 +371,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title text-primary" title="PUBG FOR PC (STEAM)">
+                      <h5 class="card-title text-black fw-bold" title="PUBG FOR PC (STEAM)">
                         PUBG FOR PC (STEAM)
                       </h5>
                       <p class="card-text">Game</p>
@@ -395,7 +395,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title text-primary" title="OrangeGame">OrangeGame</h5>
+                      <h5 class="card-title text-black fw-bold" title="OrangeGame">OrangeGame</h5>
                       <p class="card-text">Game</p>
                     </div>
                   </a>
@@ -417,7 +417,7 @@
                       "
                     ></div>
                     <div class="card-body">
-                      <h5 class="card-title text-primary" title="Free Fire Voucher">
+                      <h5 class="card-title text-black fw-bold" title="Free Fire Voucher">
                         Free Fire Voucher
                       </h5>
                       <p class="card-text">Game</p>
@@ -445,6 +445,9 @@ export default {
     return {
       detail: null,
     };
+  },
+  mounted() {
+    fetch();
   },
   async fetch() {
     this.detail = await fetch(
